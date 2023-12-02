@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Aleksandr Klyuchnik](https://up.htmlacademy.ru/adaptive-individual/1/user/2342117).
-* Наставник: `Неизвестно`.
+- Студент: [Aleksandr Klyuchnik](https://up.htmlacademy.ru/adaptive-individual/1/user/2342117).
+- Наставник: `Наталья Зотова`.
 
 ---
 
