@@ -1,12 +1,208 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+  <body class="page__body body">
+    <div class="body__page-wrapper page-wrapper">
+      <header class="page-wrapper__main-header main-header">
+        <!-- запутался немного с обертками для страницы -->
 
+        <!-- БЛОК С ЛОГОТИПАМИ -->
+
+        <div class="main-header__logos-wrapper">
+          <div class="logos-wrapper logo-image">
+            <a class="logo-image logo" aria-current="page" href="#">
+            </a>
+          </div>
+          <div class="logos-wrapper logo-name">
+            <a class="logo-name logo" aria-current="page" href="#">
+            </a>
+          </div>
+        </div>
+
+        <!-- НАВИГАЦИЯ -->
+
+        <nav class="main-header__navigation-main navigation-main">
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <div class="navigation-main__navigation-wrapper">
+            <ul class="navigation-main__site-list site-list">
+              <li class="site-list__item site-list__item--current">
+                <a class="site-list__link" href="#" aria-current="page">главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ПЕРВАЯ СЕКЦИЯ -->
+
+      <main class="page-wrapper__page-main">
+        <section class="offer">
+          <div class="offer__offer-wrapper offer-program">
+            <h1 class="offer-program__title title">функциональное питание для котов</h1>
+            <p class="offer-program__text offer-slogan">занялся собой? займись котом</p>
+            <img class="offer-program__image" src="" alt="Натуральный корм для питомцев.">
+            <a class=" " href="offer-program__link-select-program link-button">подобрать программу</a>
+          </div>
+
+          <div class="offer__offer-wrapper offer-slimming">
+            <h3 class="offer-slimming__title title">похудение</h3>
+            <p class="offer-slimming__text">Ваш кот весит больше собаки и почти утратил способность<br>лазить по деревьям? Пора на диету! Cat Energy Slim поможет&nbsp;
+              вашему питомцу сбросить лишний вес.</p>
+            <!-- символ &nbsp; почему-то не переносит строку -->
+            <!-- и пока не ясно, как переносить текст, ведь на разных устройствах разный перенос -->
+            <p class="offer-slimming__text">каталог slim
+              <a class="offer-slimming__link" href=""></a>
+            </p>
+          </div>
+
+          <div class="offer__offer-wrapper offer-mass">
+            <h3 class="offer-mass__title title">набор массы</h3>
+            <p class="offer-mass__text">Заработать авторитет среди дворовых котов и даже собак?<br>
+              Серия Cat Energy Pro поможет вашему коту нарастить&nbsp;
+              необходимые мышцы!</p>
+            <p class="offer-mass__text">каталог pro
+              <a class="offer-mass__link" href=""></a>
+            </p>
+          </div>
+        </section>
+
+        <!-- СЕКЦИЯ ПРЕИМУЩЕСТВА -->
+
+        <section class="technology">
+          <h2 class="technology__title title">как это работает</h2>
+          <div class="technology__technology-wrapper technology-wrapper">
+            <div class="technology-wrapper__technology-item">
+              <p class="technology">Функциональное питание
+                содержит только полезные
+                питательные вещества.</p>
+            </div>
+
+            <div class="technology-wrapper__technology-item">
+              <p class="technology-item">Выпускается в виде порошка,
+                который нужно лишь залить
+                кипятком и готово.</p>
+            </div>
+
+            <div class="technology-wrapper__technology-item">
+              <p class="technology-item">Замените один-два приема
+                обычной еды на наше
+                функциональное питание.</p>
+            </div>
+
+            <div class="technology-wrapper__technology-item">
+              <p class="technology-item">Уже через месяц наслаждайтесь
+                изменениями к лучшему
+                вашего питомца!</p>
+            </div>
+          </div>
+
+          <!--  СЕКЦИЯ С ПРИМЕРАМИ -->
+          <div class="technology__advantages-wrapper advantages-wrapper">
+            <h2 class="advantages-wrapper__advantages-title title">живой пример</h2>
+            <p class="advantages-wrapper__advantages-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой<br>
+              обычный корм на Cat Energy Slim. Отличный результат
+              без изнуряющих тренировок! При этом он не менял своих
+              привычек и по-прежнему спит по 16 часов в день.</p>
+
+            <div class="advantages-wrapper__advantages-item advantages-item">
+              <p class="advantages-item__figures">5кг</p>
+              <p class="advantages-item__arguments">снижение веса</p>
+            </div>
+
+            <div class="advantages-wrapper__advantages-item advantages-item">
+              <p class="advantages-item__figures">60 дней</p>
+              <p class="advantages-item__arguments">затрачено времени</p>
+            </div>
+            <p class="advantages-wrapper__expenses">затраты на питание:</p>
+            <p class="advantages-wrapper__expenses">15 000р.</p>
+          </div>
+
+          <!-- СЕКЦИЯ С КОТОМ -->
+
+          <div class="technology__interactive-wrapper interactive-wrapper">
+            <img class="interactive-wrapper__illustration-fat" src="" alt="Упитанный кот." width="" height="">
+
+            <div class="interactive-wrapper__range-scale">
+              <button class="interactive-wrapper__range-scale-batton" type="button">
+                <span class="visually-hidden">Посмотреть результат диеты.</span>
+              </button>
+            </div>
+
+            <img class="interactive-wrapper__illustration-thin" src="" alt="Худой кот." width="" height="">
+          </div>
+        </section>
+      </main>
+
+      <!-- БЕЛЫЙ КВАДРАТ -->
+
+      <footer class="page-wrapper__main-footer main-footer">
+        <div class="main-footer__cooperation cooperation">
+          <p class="cooperation__cooperation-text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="cooperation__text">ул. Большая<br>Конюшенная, д. 19/8</p>
+          <p class="cooperation__text--indent">Санкт-Петербург</p>
+        </div>
+
+        <!-- вставить MAP и svg -->
+
+        <!--  ЛОГОТИП -->
+        <div class="main-footer__logos-wrapper logo-name">
+          <a class="logo-name logo" aria-current="page" href="#">
+          </a>
+        </div>
+
+        <!-- СОЦ СЕТИ -->
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="">
+                <span class="visually-hidden">Мы Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <span class="visually-hidden">Мы на Ютуб.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <span class="visually-hidden">Мы в Телеграм.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- HTML АКАДЕМИЯ -->
+        <div class="main-footer__logo-footer">
+          <p class="logo-footer__logo-text">HTML Academy</p>
+          <span class="visually-hidden">Перейти на сайт html academy.</span>
+          <svg class="logo-footer__logo-html" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">
+            <g clip-path="url(#clip0_107792_344)">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666" />
+            </g>
+            <defs>
+              <clipPath id="clip0_107792_344">
+                <rect width="27" height="34" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <!-- не могу сообразить, как связать <p> и <svg>, что бы были единые состояния (hover,focus,active) диву я же не могу задать состояние -->
+
+      </footer>
+    </div>
   </body>
+
 </html>
