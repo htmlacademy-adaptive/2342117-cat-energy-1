@@ -21,13 +21,19 @@
             <button class="main-header__toggle nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
+            <!--
+            а здесь не нужно создать еще одну кнопку, которая закрывает бургер?
+            <button class="main-header__toggle-close" type="button">
+              <span class="visually-hidden">Закрыть меню.</span>
+            </button> -->
+
             <div class="nav__wrapper">
               <ul class="nav__list site-list">
                 <li class="site-list__item">
                   <a class="site-list__link site-list__link--current" href="index.html" aria-current="page">главная</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html">каталог продукции</a>
+                  <a class="site-list__link" aria-current="page" href="#">каталог продукции</a>
                 </li>
                 <li class="site-list__item">
                   <a class="site-list__link" href="form.html">подбор программы</a>
@@ -42,147 +48,259 @@
         <div class="main__conteiner container">
           <section class="catalog">
             <h1 class="catalog__title page-title">Каталог продукции</h1>
-            <div class="catalog__container container">
-              <ul class="catalog__list site-list">
+            <div class="catalog__cards card">
+              <ul class="card__list">
 
-                <li class="catalog__item card">
-                  <img class="catalog__image" src="" alt="">
-                  <p class="catalog__card-title"></p>
-                  <div class="catalog__inner">
-                    <div class="catalog__row">
-                      <p class="catalog__features">Масса</p>
-                      <p class="catalog__card"></p>
+                <li class="card__item">
+                  <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
+                  <p class="card__card-title">cat energy<br>pro 500 г</p>
+                  <div class="card__inner">
+                    <div class="card__row">
+                      <p class="card__features">Масса</p>
+                      <p class="card__benefits">500 г</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Вкус</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Вкус</p>
+                      <p class="card__benefits">Курица</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Цена</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Цена</p>
+                      <p class="card__benefits">700 ₽</p>
                     </div>
                   </div>
-                  <button class="catalog__button button" type="button">заказать</button>
+                  <a class="card__link link-button link" href="#">заказать</a>
                 </li>
 
-                <li class="catalog__item card">
-                  <img class="catalog__image" src="" alt="">
-                  <p class="catalog__card-title"></p>
-                  <div class="catalog__inner">
-                    <div class="catalog__row">
-                      <p class="catalog__features">Масса</p>
-                      <p class="catalog__card"></p>
+                <li class="card__item">
+                  <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
+                  <p class="card__card-title">cat energy<br>pro 1000 г</p>
+                  <div class="card__inner">
+                    <div class="card__row">
+                      <p class="card__features">Масса</p>
+                      <p class="card__benefits">1000 г</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Вкус</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Вкус</p>
+                      <p class="card__benefits">Курица</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Цена</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Цена</p>
+                      <p class="card__benefits">1000 ₽</p>
                     </div>
                   </div>
-                  <button class="catalog__button button" type="button">заказать</button>
+                  <a class="card__link link-button link" href="#">заказать</a>
                 </li>
 
-                <li class="catalog__item card">
-                  <img class="catalog__image" src="" alt="">
-                  <p class="catalog__card-title"></p>
-                  <div class="catalog__inner">
-                    <div class="catalog__row">
-                      <p class="catalog__features">Масса</p>
-                      <p class="catalog__card"></p>
+                <li class="card__item">
+                  <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
+                  <p class="card__card-title">cat energy<br>pro 500 г</p>
+                  <div class="card__inner">
+                    <div class="card__row">
+                      <p class="card__features">Масса</p>
+                      <p class="card__benefits">500 г</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Вкус</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Вкус</p>
+                      <p class="card__benefits">Рыба</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Цена</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Цена</p>
+                      <p class="card__benefits">700 ₽</p>
                     </div>
                   </div>
-                  <button class="catalog__button button" type="button">заказать</button>
+                  <a class="card__link link-button link" href="#">заказать</a>
                 </li>
 
-                <li class="catalog__item card">
-                  <img class="catalog__image" src="" alt="">
-                  <p class="catalog__card-title"></p>
-                  <div class="catalog__inner">
-                    <div class="catalog__row">
-                      <p class="catalog__features">Масса</p>
-                      <p class="catalog__card"></p>
+                <li class="card__item">
+                  <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
+                  <p class="card__card-title">cat energy<br>pro 1000 г</p>
+                  <div class="card__inner">
+                    <div class="card__row">
+                      <p class="card__features">Масса</p>
+                      <p class="card__benefits">1000 г</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Вкус</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Вкус</p>
+                      <p class="card__benefits">Рыба</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Цена</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Цена</p>
+                      <p class="card__benefits">1000 ₽</p>
                     </div>
                   </div>
-                  <button class="catalog__button button" type="button">заказать</button>
+                  <a class="card__link link-button link" href="#">заказать</a>
                 </li>
 
-                <li class="catalog__item card">
-                  <img class="catalog__image" src="" alt="">
-                  <p class="catalog__card-title"></p>
-                  <div class="catalog__inner">
-                    <div class="catalog__row">
-                      <p class="catalog__features">Масса</p>
-                      <p class="catalog__card"></p>
+                <li class="card__item">
+                  <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
+                  <p class="card__card-title">cat energy<br>slim 500 г</p>
+                  <div class="card__inner">
+                    <div class="card__row">
+                      <p class="card__features">Масса</p>
+                      <p class="card__benefits">500 г</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Вкус</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Вкус</p>
+                      <p class="card__benefits">Гречка</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Цена</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Цена</p>
+                      <p class="card__benefits">400 ₽</p>
                     </div>
                   </div>
-                  <button class="catalog__button button" type="button">заказать</button>
+                  <a class="card__link link-button link" href="#">заказать</a>
                 </li>
 
-                <li class="catalog__item card">
-                  <img class="catalog__image" src="" alt="">
-                  <p class="catalog__card-title"></p>
-                  <div class="catalog__inner">
-                    <div class="catalog__row">
-                      <p class="catalog__features">Масса</p>
-                      <p class="catalog__card"></p>
+                <li class="card__item">
+                  <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
+                  <p class="card__card-title">cat energy<br>slim 1000 г</p>
+                  <div class="card__inner">
+                    <div class="card__row">
+                      <p class="card__features">Масса</p>
+                      <p class="card__benefits">1000 г</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Вкус</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Вкус</p>
+                      <p class="card__benefits">Гречка</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Цена</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Цена</p>
+                      <p class="card__benefits">700 ₽</p>
                     </div>
                   </div>
-                  <button class="catalog__button button" type="button">заказать</button>
+                  <a class="card__link link-button link" href="#">заказать</a>
                 </li>
 
-                <li class="catalog__item card">
-                  <img class="catalog__image" src="" alt="">
-                  <p class="catalog__card-title"></p>
-                  <div class="catalog__inner">
-                    <div class="catalog__row">
-                      <p class="catalog__features">Масса</p>
-                      <p class="catalog__card"></p>
+                <li class="card__item">
+                  <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
+                  <p class="card__card-title">cat energy<br>slim 500 г</p>
+                  <div class="card__inner">
+                    <div class="card__row">
+                      <p class="card__features">Масса</p>
+                      <p class="card__benefits">500 г</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Вкус</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Вкус</p>
+                      <p class="card__benefits">Рис</p>
                     </div>
-                    <div class="catalog__row">
-                      <p class="catalog__features">Цена</p>
-                      <p class="catalog__benefits"></p>
+                    <div class="card__row">
+                      <p class="card__features">Цена</p>
+                      <p class="card__benefits">500 ₽</p>
                     </div>
                   </div>
-                  <button class="catalog__button button" type="button">заказать</button>
+                  <a class="card__link link-button link" href="#">заказать</a>
+                </li>
+
+                <li class="card__item card-item card-item--more">
+                  <div class="card__decor card__decor--vertical"></div>
+                  <div class="card__decor card__decor--horizontal"></div>
+                  <p class="card__title card-title card-title--more">Показать еще 100500 товаров</p>
+                  <p class="card__text card__text--more">На самом деле вкусов гораздо больше!</p>
+                  <a class="card__link link-button link-button--show-all link" href="#">показать все</a>
                 </li>
               </ul>
             </div>
+          </section>
+
+          <section class="supplementary">
+            <div class="supplementary__container container">
+              <h2 class="supplementary__title">Дополнительные товары</h2>
+
+              <ul class="supplementary__list list">
+                <li class="supplementary__item">
+                  <p class="supplementary__title">Сахарозаменитель</p>
+                  <p class="supplementary__description">1 упаковка (100 г)</p>
+                  <p class="supplementary__price">200 ₽</p>
+                  <a class="supplementary__link link link-button" href="#">заказать</a>
+                </li>
+
+                <li class="supplementary__item">
+                  <p class="supplementary__title">питьевая вода</p>
+                  <p class="supplementary__description">5 литров</p>
+                  <p class="supplementary__price">50 ₽</p>
+                  <a class="supplementary__link link link-button" href="#">заказать</a>
+                </li>
+
+                <li class="supplementary__item">
+                  <p class="supplementary__title">молоко</p>
+                  <p class="supplementary__description">1 литр</p>
+                  <p class="supplementary__price">100 ₽</p>
+                  <a class="supplementary__link link link-button" href="#">заказать</a>
+                </li>
+
+                <li class="supplementary__item">
+                  <p class="supplementary__title">витамины</p>
+                  <p class="supplementary__description">1 упаковка (30 г)</p>
+                  <p class="supplementary__price">300 ₽</p>
+                  <a class="supplementary__link link link-button" href="#">заказать</a>
+                </li>
+              </ul>
+            </div>
+            <div class="supplementary__proposal">
+              <p class="supplementary__text">Закажите все и получите чехол для кота в подарок!</p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!--  FOOTER -->
+
+      <footer class="main-footer">
+        <section class="main-footer__map-container map map--home">
+          <div class="map__container container">
+            <h3 class="visually-hidden">Местонахождение.</h3>
+            <div class="map__contact">
+              <h2 class="map__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+              <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+            </div>
+          </div>
+          <div class="map__iframe-container">
+            <noscript>
+              <a class="map__img" href="https://maps.app.goo.gl/wqFtRHes4bMVLsNz7">
+                <img src="#" alt="Карта" width="320" height="362">
+              </a>
+            </noscript>
+            <div class="map__iframe">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728572!2d30.32047247713442!3d59.93871647491517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2stn!4v1702522717873!5m2!1sru!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-footer__container container">
+          <h3 class="visually-hidden">Социальные сети.</h3>
+          <a class="main-footer__logo" href="index.html">
+            <img src="img/footer-logo.svg" alt="Логотип." width="128" height="24">
+          </a>
+
+          <ul class="main-footer__social social site-list">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <img src="img/vkontakte.svg" alt="vkontakte." width="28" height="22">
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="img/youtube.svg" alt="youtube." width="28" height="22">
+                <span class="visually-hidden">Мы на YouTube.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <img src="img/telegram.svg" alt="telegram." width="28" height="22">
+                <span class="visually-hidden">Мы в Телеграм.</span>
+              </a>
+            </li>
+          </ul>
+
+          <a class="main-footer__logo-html logo-html" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="logo-html__text">HTML Academy</span>
+            <!-- мне кажется здесь нужен див и два изображения -->
+            <img src="img/html-academy.svg" alt="Логотип." width="128" height="24">
+          </a>
+        </section>
+      </footer>
+    </div>
+  </body>
+
+</html>
