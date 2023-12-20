@@ -21,12 +21,6 @@
             <button class="main-header__toggle nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
-            <!--
-            а здесь не нужно создать еще одну кнопку, которая закрывает бургер?
-            <button class="main-header__toggle-close" type="button">
-              <span class="visually-hidden">Закрыть меню.</span>
-            </button> -->
-
             <div class="nav__wrapper">
               <ul class="nav__list site-list">
                 <li class="site-list__item">
@@ -45,15 +39,19 @@
       </header>
 
       <main class="main">
-        <div class="main__conteiner container">
-          <section class="catalog">
-            <h1 class="catalog__title page-title">Каталог продукции</h1>
+        <section class="catalog">
+          <div class="catalog__conteiner container">
+            <!-- мы не можем сделать h2 в li, иначе будет нарушена структура заголовков на стр. Поэтому делаю h1 скрытый, h2 смысловые блоки, h3 -title и т.д.  -->
+            <h1 class="visually-hidden">Подберите корм для вашего питомца.</h1>
+            <h2 class="catalog__title page-title">Каталог продукции</h2>
             <div class="catalog__cards card">
               <ul class="card__list">
 
                 <li class="card__item">
-                  <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
-                  <p class="card__card-title">cat energy<br>pro 500 г</p>
+                  <a class="card__link button link" href="#">
+                    <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
+                    <h3 class="card__card-title">cat energy<br>pro 500 г</h3>
+                  </a>
                   <div class="card__inner">
                     <div class="card__row">
                       <p class="card__features">Масса</p>
@@ -72,8 +70,10 @@
                 </li>
 
                 <li class="card__item">
-                  <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
-                  <p class="card__card-title">cat energy<br>pro 1000 г</p>
+                  <a class="card__link button link" href="#">
+                    <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
+                    <h3 class="card__card-title">cat energy<br>pro 1000 г</h3>
+                  </a>
                   <div class="card__inner">
                     <div class="card__row">
                       <p class="card__features">Масса</p>
@@ -92,8 +92,10 @@
                 </li>
 
                 <li class="card__item">
-                  <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
-                  <p class="card__card-title">cat energy<br>pro 500 г</p>
+                  <a class="card__link button link" href="#">
+                    <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
+                    <h3 class="card__card-title">cat energy<br>pro 500 г</h3>
+                  </a>
                   <div class="card__inner">
                     <div class="card__row">
                       <p class="card__features">Масса</p>
@@ -112,8 +114,10 @@
                 </li>
 
                 <li class="card__item">
-                  <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
-                  <p class="card__card-title">cat energy<br>pro 1000 г</p>
+                  <a class="card__link button link" href="#">
+                    <img class="card__image" src="" alt="банка корма для набора массы." width="68" height="86">
+                    <h3 class="card__card-title">cat energy<br>pro 1000 г</h3>
+                  </a>
                   <div class="card__inner">
                     <div class="card__row">
                       <p class="card__features">Масса</p>
@@ -132,8 +136,10 @@
                 </li>
 
                 <li class="card__item">
-                  <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
-                  <p class="card__card-title">cat energy<br>slim 500 г</p>
+                  <a class="card__link button link" href="#">
+                    <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
+                    <h3 class="card__card-title">cat energy<br>slim 500 г</h3>
+                  </a>
                   <div class="card__inner">
                     <div class="card__row">
                       <p class="card__features">Масса</p>
@@ -152,8 +158,10 @@
                 </li>
 
                 <li class="card__item">
-                  <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
-                  <p class="card__card-title">cat energy<br>slim 1000 г</p>
+                  <a class="card__link button link" href="#">
+                    <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
+                    <h3 class="card__card-title">cat energy<br>slim 1000 г</h3>
+                  </a>
                   <div class="card__inner">
                     <div class="card__row">
                       <p class="card__features">Масса</p>
@@ -172,8 +180,10 @@
                 </li>
 
                 <li class="card__item">
-                  <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
-                  <p class="card__card-title">cat energy<br>slim 500 г</p>
+                  <a class="card__link button link" href="#">
+                    <img class="card__image" src="" alt="банка корма для похудения." width="68" height="86">
+                    <h3 class="card__card-title">cat energy<br>slim 500 г</h3>
+                  </a>
                   <div class="card__inner">
                     <div class="card__row">
                       <p class="card__features">Масса</p>
@@ -191,56 +201,56 @@
                   <a class="card__link button link" href="#">заказать</a>
                 </li>
 
-                <li class="card__item card-item card-item--more">
-                  <div class="card__decor card__decor--vertical"></div>
-                  <div class="card__decor card__decor--horizontal"></div>
-                  <p class="card__title card-title card-title--more">Показать еще 100500 товаров</p>
-                  <p class="card__text card__text--more">На самом деле вкусов гораздо больше!</p>
-                  <a class="card__link button button--show-all link" href="#">показать все</a>
+                <li class="card__item card__item--more">
+                  <div class="card__inner">
+                    <h3 class="card__title">Показать еще 100500 товаров</h3>
+                    <p class="card__text">На самом деле вкусов гораздо больше!</p>
+                  </div>
+                  <a class="card__link button link" href="#">Показать все</a>
                 </li>
               </ul>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section class="supplementary">
-            <div class="supplementary__container container">
-              <h2 class="supplementary__title-main">Дополнительные товары</h2>
+        <section class="supplementary">
+          <div class="supplementary__container container">
+            <h2 class="supplementary__title-main">Дополнительные товары</h2>
 
-              <ul class="supplementary__list list">
-                <li class="supplementary__item">
-                  <h3 class="supplementary__title">Сахарозаменитель</h3>
-                  <p class="supplementary__description">1 упаковка (100 г)</p>
-                  <p class="supplementary__price">200 ₽</p>
-                  <a class="supplementary__link link button" href="#">заказать</a>
-                </li>
+            <ul class="supplementary__list list">
+              <li class="supplementary__item">
+                <h3 class="supplementary__title">Сахарозаменитель</h3>
+                <p class="supplementary__description">1 упаковка (100 г)</p>
+                <p class="supplementary__price">200 ₽</p>
+                <a class="supplementary__link link button" href="#">заказать</a>
+              </li>
 
-                <li class="supplementary__item">
-                  <h3 class="supplementary__title">Питьевая вода</h3>
-                  <p class="supplementary__description">5 литров</p>
-                  <p class="supplementary__price">50 ₽</p>
-                  <a class="supplementary__link link button" href="#">заказать</a>
-                </li>
+              <li class="supplementary__item">
+                <h3 class="supplementary__title">Питьевая вода</h3>
+                <p class="supplementary__description">5 литров</p>
+                <p class="supplementary__price">50 ₽</p>
+                <a class="supplementary__link link button" href="#">заказать</a>
+              </li>
 
-                <li class="supplementary__item">
-                  <h3 class="supplementary__title">Молоко</h3>
-                  <p class="supplementary__description">1 литр</p>
-                  <p class="supplementary__price">100 ₽</p>
-                  <a class="supplementary__link link button" href="#">заказать</a>
-                </li>
+              <li class="supplementary__item">
+                <h3 class="supplementary__title">Молоко</h3>
+                <p class="supplementary__description">1 литр</p>
+                <p class="supplementary__price">100 ₽</p>
+                <a class="supplementary__link link button" href="#">заказать</a>
+              </li>
 
-                <li class="supplementary__item">
-                  <h3 class="supplementary__title">Витамины</h3>
-                  <p class="supplementary__description">1 упаковка (30 г)</p>
-                  <p class="supplementary__price">300 ₽</p>
-                  <a class="supplementary__link link button" href="#">заказать</a>
-                </li>
-              </ul>
-            </div>
-            <div class="supplementary__proposal">
-              <p class="supplementary__text">Закажите все и получите чехол для кота в подарок!</p>
-            </div>
-          </section>
-        </div>
+              <li class="supplementary__item">
+                <h3 class="supplementary__title">Витамины</h3>
+                <p class="supplementary__description">1 упаковка (30 г)</p>
+                <p class="supplementary__price">300 ₽</p>
+                <a class="supplementary__link link button" href="#">заказать</a>
+              </li>
+            </ul>
+          </div>
+          <div class="supplementary__proposal">
+            <p class="supplementary__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </section>
       </main>
 
       <!--  FOOTER -->
