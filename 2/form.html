@@ -10,7 +10,6 @@
   <body class="body">
     <div class="page-wrapper">
       <header class="main-header">
-        <!-- не много не понял с container. Они так и должны называться по всему сайтe с одним именем? -->
         <div class="main-header__conteiner container">
           <a class="logo-image logo" href="index.html">
             <img src="#" alt="Логотип." width="33" height="38">
@@ -49,6 +48,7 @@
           </div>
 
           <!-- ФОРМА -->
+
           <div class="application__wrapper">
             <form class="application__form form" aria-label="заполните форму." action="https://echo.htmlacademy.ru" method="post">
               <div class="form__group-wrapper">
@@ -71,6 +71,8 @@
                   </ul>
                 </fieldset>
 
+                <!-- радио кнопки -->
+
                 <fieldset class="form__group form__group--radio">
                   <ul class="control list-reset">
                     <li class="control__item">
@@ -90,6 +92,9 @@
                   </ul>
                 </fieldset>
               </div>
+
+              <!-- контактные данные -->
+
               <fieldset class="form__group form__group--contacts">
                 <legend class="form__title">Контактные данные <br>(владельца кота)</legend>
                 <ul class="form__list list-reset">
@@ -108,41 +113,44 @@
                 </ul>
               </fieldset>
 
+              <!-- комментарии -->
+
               <fieldset class="form__group form__group--comments">
                 <legend class="form__title">Комментарии</legend>
-                <!-- <label class="group-comments__label control-label" for="comment">Расскажите обо всех повадках кота</label> -->
                 <label class="visually-hidden">Комментарий владельца</label>
                 <textarea class="form-input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
 
-              <!-- Чекбоксы так же как радиокнопки -->
+              <!-- Чек боксы -->
+
               <fieldset class="form__group form__group--check">
-                <ul class="form__list check-list">
-                  <li class="form__item">
-                    <label class="form__label check-label" for="sugar">Сахарозаменитель</label>
-                    <input class="form__input" type="checkbox" id="sugar" name="sugar" checked>
+                <ul class="control list-reset">
+                  <li class="control__item">
+                    <label class="control__label form__label" for="sugar">Сахарозаменитель</label>
+                    <input class="control__input control__input--check" type="checkbox" id="sugar" name="sugar" checked>
                   </li>
 
-                  <li class="form__item">
-                    <label class="form__label check-label" for="water">Питьевая вода</label>
-                    <input class="form__input" type="checkbox" id="water" name="water">
+                  <li class="control__item">
+                    <label class="control__label form__label" for="water">Питьевая вода</label>
+                    <input class="control__input control__input--check" type="checkbox" id="water" name="water">
                   </li>
 
-                  <li class="form__item">
-                    <label class="form__label check-label" for="milk">Молоко</label>
-                    <input class="form__input" type="checkbox" id="milk" name="milk">
+                  <li class="control__item">
+                    <label class="control__label form__label" for="milk">Молоко</label>
+                    <input class="control__input control__input--check" type="checkbox" id="milk" name="milk">
                   </li>
 
-                  <li class="form__item">
-                    <label class="form__label check-label" for="vitamins">Витамины</label>
-                    <input class="form__input" type="checkbox" id="vitamins" name="vitamins">
+                  <li class="control__item">
+                    <label class="control__label form__label" for="vitamins">Витамины</label>
+                    <input class="control__input control__input--check" type="checkbox" id="vitamins" name="vitamins">
                   </li>
                 </ul>
               </fieldset>
 
-              <div class="form__group form__group--submit">
-                <button class="application-button button button--long" type="submit">отправить заявку</button>
-                <p class="application__text">* — Обязательные поля</p>
+              <div class="form__submit">
+                <button class="form-button button button--long" type="submit">отправить заявку
+                </button>
+                <p class="form__note">* — Обязательные поля</p>
               </div>
             </form>
           </div>
