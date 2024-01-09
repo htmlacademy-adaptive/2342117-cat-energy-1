@@ -275,6 +275,7 @@ img {
   position: absolute;
   bottom: 44px;
   left: 10px;
+  /* не знаю что это, но наверно изображение на макете повторяется */
 
   background-repeat: no-repeat;
 }
@@ -364,7 +365,7 @@ img {
   text-decoration: none;
 }
 
-/* блок  "КАК ЭТО РАБОТАЕТ" */
+/*    КАК ЭТО РАБОТАЕТ */
 
 .technology {
   background-color: #ffffff;
@@ -398,7 +399,7 @@ img {
 }
 
 /* ЖИВОЙ ПРИМЕР */
-/* блок не получается встроить в макет */
+/* блок не получается встроитьв макет */
 .example__container {
   display: flex;
   flex-direction: column;
@@ -518,7 +519,7 @@ img {
   line-height: 20px;
 }
 
-/* карту скрыл, не пойму почему она закрывает футер. Длину стр вроде не ограничивал. */
+/* карту скрыл, не пойму почему она закрыыает футер. Длину стр вроде не ограничивал. */
 .map {
   display: none;
   width: 320px;
@@ -545,7 +546,7 @@ img {
   list-style: none;
 }
 
-/* не могу вспомнить как это исправит,но изображение не видно полностью */
+/* не могу вспомнить как,но изображение не видно полностью */
 .logo__name-footer {
   display: block;
   width: 128px;
@@ -563,66 +564,3 @@ img {
 
   text-decoration: none;
 }
-
-// // функции
-
-// // базовые свойства
-
-// @import "./base/fonts.scss";
-
-// @import "./base/base.scss";
-
-// // Миксины и переменные
-
-// // Блоки компонентов
-// @import "./bloks/main-header";
-
-// @import "./bloks/logo-image";
-
-// @import "./bloks/nav";
-
-// @import "./bloks/button";
-
-// @import "./bloks/example.scss";
-
-// @import "./bloks/logo-html";
-
-// @import "./bloks/map.scss";
-
-// @import "./bloks/main-footer";
-
-// @import "./bloks/offer.scss";
-
-// @import "./bloks/page-title";
-
-// @import "./bloks/site-list";
-
-// @import "./bloks/slider.scss";
-
-// @import "./bloks/social.scss";
-
-// @import "./bloks/technology";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
-
-// @import "./bloks";
