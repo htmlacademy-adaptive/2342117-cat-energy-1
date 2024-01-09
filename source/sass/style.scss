@@ -1,6 +1,62 @@
+// функции
 
-@use "main-header.scss";
+// базовые свойства
 
-body {
-  background-color: #444444;
-}
+@import "./base/fonts.scss";
+
+@import "./base/base.scss";
+
+// Миксины и переменные
+
+// Блоки компонентов
+@import "./bloks/main-header";
+
+@import "./bloks/logo-image";
+
+@import "./bloks/nav";
+
+@import "./bloks/button";
+
+@import "./bloks/example.scss";
+
+@import "./bloks/logo-html";
+
+@import "./bloks/map.scss";
+
+@import "./bloks/main-footer";
+
+@import "./bloks/offer.scss";
+
+@import "./bloks/page-title";
+
+@import "./bloks/site-list";
+
+@import "./bloks/slider.scss";
+
+@import "./bloks/social.scss";
+
+@import "./bloks/technology";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";
+
+@import "./bloks";

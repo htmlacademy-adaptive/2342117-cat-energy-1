@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  margin: auto 0;
+  padding: 10px 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: oswald;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:focus {
+  background-color: #5eaa2f;
+  opacity: 0.3;
+}
+
+.button:active {
+  background-color: transparent;
+}

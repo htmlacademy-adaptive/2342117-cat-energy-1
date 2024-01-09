@@ -12,13 +12,13 @@
       <header class="main-header">
         <div class="main-header__container container">
           <a class="logo-image logo" aria-current="page" href="index.html">
-            <img src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
-            <img src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
+            <img class="logo__cat-mobile" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
+            <img class="logo__cat-footer" src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
           </a>
 
           <!-- НАВИГАЦИЯ -->
 
-          <nav class="main-header__navigation nav">
+          <nav class="main-header__navigation nav nav-close">
             <button class="main-header__toggle nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
@@ -42,7 +42,8 @@
 
         <section class="promo promo--home">
           <div class="promo__container container">
-            <img src="img/index-background-mobile.jpg" alt="довольный кот." width="320" height="302">
+            <img class="promo__content" src="img/index-can.png" alt="Корм для котов." width="280" height="270">
+            <!-- no-repeat -->
             <div class="promo__description">
               <h1 class="promo__title page-title">Функциональное питание для котов</h1>
               <p class="promo__text">Занялся собой? Займись котом!</p>
@@ -50,7 +51,7 @@
             <div class="promo__img">
               <img src="img/index-can.png" alt="Корм Cat Energy курица 500г" width="280" height="270">
             </div>
-            <a class="promo__button button" href="form.html">Подобрать программу</a>
+            <a class="promo__button button link" href="form.html">Подобрать программу</a>
           </div>
         </section>
       </header>
@@ -80,8 +81,8 @@
         <!-- TECHNOLOGY -->
 
         <section class="technology">
+          <h2 class="technology__title page-title">Как это работает</h2>
           <div class="technology__container container">
-            <h2 class="technology__title page-title">Как это работает</h2>
             <ul class="technology__list">
               <li class="technology__item technology__item--beneficial">Функциональное питание содержит только полезные питательные вещества.</li>
               <li class="technology__item technology__item--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -100,13 +101,15 @@
               <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
               <div class="example__result">
-                <div class="example__result-item">
-                  <span class="example__result-value">5 кг</span>
-                  <span class="example__result-description">Снижение веса</span>
-                </div>
-                <div class="example__result-item">
-                  <span class="example__result-value">60 дней</span>
-                  <span class="example__result-description">Затрачено времени</span>
+                <div class="example__result-cover">
+                  <div class="example__result-item">
+                    <span class="example__result-value">5 кг</span>
+                    <span class="example__result-description">Снижение веса</span>
+                  </div>
+                  <div class="example__result-item">
+                    <span class="example__result-value">60 дней</span>
+                    <span class="example__result-description">Затрачено времени</span>
+                  </div>
                 </div>
                 <div class="example__result-price">
                   <p class="example__price">Затраты на питание: <span>15&nbsp;000 руб.</span></p>
@@ -116,10 +119,10 @@
             <div class="example__slider slider">
               <div class="slider__container">
                 <div class="slider__item slider__item--before">
-                  <img src="img/cat-fat-mobile.png" alt="Толстый кот" width="280" height="256">
+                  <img class="slider__image-fat" src="img/cat-fat-mobile.png" alt="Толстый кот" width="280" height="256">
                 </div>
                 <div class="slider__item slider__item--after">
-                  <img src="img/cat-thin-mobile.png" alt="Стройный кот" width="280" height="256">
+                  <img class="slider__image-thin" src="img/cat-thin-mobile.png" alt="Стройный кот" width="280" height="256">
                 </div>
               </div>
               <div class="slider__change">
@@ -135,6 +138,7 @@
       <footer class="main-footer">
         <section class="main-footer__map-container map map--home">
           <div class="map__container container">
+            <!-- map__container работает у меня как контейнер для адреса. нужно ли обьъеденять адрес и карту в один -->
             <h2 class="visually-hidden">Местонахождение.</h2>
             <div class="map__contact">
               <h3 class="map__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
@@ -148,7 +152,7 @@
               </a>
             </noscript>
             <div class="map__iframe">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728572!2d30.32047247713442!3d59.93871647491517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2stn!4v1702522717873!5m2!1sru!2stn" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728572!2d30.32047247713442!3d59.93871647491517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2stn!4v1702522717873!5m2!1sru!2stn" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
           </div>
@@ -157,7 +161,7 @@
         <section class="main-footer__container container">
           <h2 class="visually-hidden">Социальные сети.</h2>
           <a class="main-footer__logo" href="index.html" aria-current="page">
-            <img src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
+            <img class="logo__name-footer" src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
           </a>
 
           <ul class="main-footer__social social">
