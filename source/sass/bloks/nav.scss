@@ -1,0 +1,30 @@
+// позиционируем от container
+.nav__toggle {
+  position: absolute;
+  top: 9px;
+  right: 0;
+
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 4px 0;
+}
+
+.nav--close .nav__list {
+  display: none;
+}
+
+.nav__list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+
+  background-color: #ffffff;
+}

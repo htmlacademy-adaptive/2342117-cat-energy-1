@@ -1,0 +1,48 @@
+.slider {
+  position: relative;
+
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.slider__container {
+  position: relative;
+
+  min-height: 256px;
+  overflow: hidden;
+}
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item--before {
+  z-index: 2;
+}
+
+.slider__item--after {
+  right: 0;
+  left: auto;
+  z-index: 1;
+}
+
+.slider__item--before img {
+  object-position: left;
+}
+
+.slider__item--after img {
+  object-position: right;
+}

@@ -1,0 +1,38 @@
+.offer__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.offer__item {
+  padding: 30px 20px 18px;
+
+  background-color: #f2f2f2;
+}
+
+.offer__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: $ff-oswald;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.offer__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.offer__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $ff-oswald;
+  color: #000000;
+  text-decoration: none;
+}

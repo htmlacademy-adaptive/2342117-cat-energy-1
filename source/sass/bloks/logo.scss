@@ -1,0 +1,28 @@
+.logo {
+  display: block;
+  width: fit-content;
+
+  cursor: pointer;
+
+  // не понял,откуда мы взяли этот модификатор. Но добавлю его в html к .logo
+  &--full {
+    display: grid;
+    align-items: center;
+
+    column-gap: 56px;
+
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.logo__img {
+  display: block;
+  width: 33px;
+  height: 38px;
+}
+
+.logo__text {
+  display: block;
+  width: 101px;
+  height: 18px;
+}

@@ -1,0 +1,15 @@
+.logo-html {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+
+  & svg {
+    width: 27px;
+    height: 34px;
+  }
+}

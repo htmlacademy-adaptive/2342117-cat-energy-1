@@ -1,0 +1,25 @@
+.main-footer {
+  background-color: #f2f2f2;
+}
+
+.main-footer__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+// main-footer.scss должен подключаться ниже social.scss - я этого не понимаю.
+// КАК блок main-footer подключить ниже social, если блоки (сас файлы) идут в алфавитном порядке ?
+.main-footer__social {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px 0 19px;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__logo {
+  width: 128px;
+  height: 24px;
+  margin: 0 auto 19px;
+}

@@ -1,0 +1,36 @@
+.promo__description {
+  margin: 0 -20px;
+
+  color: #ffffff;
+
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../img/index-background-mobile.jpg");
+  background-repeat: repeat, no-repeat;
+  background-position: top;
+  background-size: auto, cover;
+}
+
+.promo__button {
+  width: 100%;
+}
+
+// Когда будешь делать адаптацию поставь line-height: 36px; только на мобильных
+.promo__title {
+  margin-bottom: 25px;
+
+  font-family: $ff-oswald;
+  color: inherit;
+}
+
+.promo__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $ff-oswald;
+  text-transform: uppercase;
+}
