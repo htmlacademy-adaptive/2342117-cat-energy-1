@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Cat energy</title>
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body class="body">
@@ -17,7 +18,7 @@
 
           <!-- НАВИГАЦИЯ -->
 
-          <nav class="main-header__navigation nav">
+          <nav class="main-header__navigation nav nav--close">
             <button class="main-header__toggle nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
@@ -43,7 +44,7 @@
         <section class="application">
           <div class="application__container container">
             <h1 class="application__title page-title">Подбор программы</h1>
-            <p class="application__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <p class="application__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
           </div>
 
           <!-- ФОРМА -->
@@ -55,17 +56,17 @@
                   <ul class="form__list list-reset">
                     <li class="form__item">
                       <label class="form__label" for="name">Имя:*</label>
-                      <input class="form__input form-input" type="text" id="name" name="name" required>
+                      <input class="form__input form-input" type="text" id="name" placeholder="барсик" name="name" required>
                     </li>
 
                     <li class="form__item">
                       <label class="form__label" for="weight">Вес(кг):*</label>
-                      <input class="form__input" type="text" id="weight" name="weight" required>
+                      <input class="form__input" type="text" id="weight" placeholder="7" name="weight" required>
                     </li>
 
                     <li class="form__item">
                       <label class="form__label" for="age">Возраст (лет):</label>
-                      <input class="form__input" type="text" id="age" name="age">
+                      <input class="form__input" type="text" id="age" placeholder="7" name="age">
                     </li>
                   </ul>
                 </fieldset>
@@ -95,8 +96,8 @@
               <!-- контактные данные -->
 
               <fieldset class="form__group form__group--contacts">
-                <legend class="form__title">Контактные данные <br>(владельца кота)</legend>
-                <ul class="form__list list-reset">
+                <legend class="form__title">Контактные данные (владельца кота)</legend>
+                <ul class="form__list list-contacts list-reset">
                   <li class="form__item">
                     <label class="form__label" for="email">Ваш email:*</label>
                     <span class="form__input-container form__input-container--mail">
@@ -104,43 +105,44 @@
                     </span>
                   </li>
                   <li class="form__item">
-                    <label class="form__label" for="phone">Номер телефона:</label>
+                    <label class="form__label" for="phone">телефона:*</label>
                     <span class="form__input-container form__input-container--phone">
-                      <input class="form__input" type="tel" id="phone" name="phone" required>
+                      <input class="form__input" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="phone" required>
                     </span>
                   </li>
                 </ul>
               </fieldset>
-
               <!-- комментарии -->
 
               <fieldset class="form__group form__group--comments">
-                <legend class="form__title">Комментарии</legend>
+                <legend class="form__title form-title-comments">Комментарии</legend>
                 <label class="visually-hidden">Комментарий владельца</label>
-                <textarea class="form-input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="form-input form-input-aria" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
 
               <!-- Чек боксы -->
 
               <fieldset class="form__group form__group--check">
-                <ul class="control list-reset">
-                  <li class="control__item">
-                    <label class="control__label form__label" for="sugar">Сахарозаменитель</label>
+                <legend class="form__title form-title-check">Дополнительно</legend>
+
+                <ul class="control list-reset list-check">
+                  <li class="control__item control__item-check">
+                    <label class="control__label form__label label-check" for="sugar">Сахарозаменитель</label>
                     <input class="control__input control__input--check" type="checkbox" id="sugar" name="sugar" checked>
                   </li>
 
-                  <li class="control__item">
-                    <label class="control__label form__label" for="water">Питьевая вода</label>
+                  <li class="control__item control__item-check">
+                    <label class="control__label form__label label-check" for="water">Питьевая вода</label>
                     <input class="control__input control__input--check" type="checkbox" id="water" name="water">
                   </li>
 
-                  <li class="control__item">
-                    <label class="control__label form__label" for="milk">Молоко</label>
+                  <li class="control__item control__item-check">
+                    <label class="control__label form__label label-check" for="milk">Молоко</label>
                     <input class="control__input control__input--check" type="checkbox" id="milk" name="milk">
                   </li>
 
-                  <li class="control__item">
-                    <label class="control__label form__label" for="vitamins">Витамины</label>
+                  <li class="control__item control__item-check">
+                    <label class="control__label form__label label-check" for="vitamins">Витамины</label>
                     <input class="control__input control__input--check" type="checkbox" id="vitamins" name="vitamins">
                   </li>
                 </ul>

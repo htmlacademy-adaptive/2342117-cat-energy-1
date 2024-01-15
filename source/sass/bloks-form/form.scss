@@ -1,0 +1,40 @@
+// ОБЕРТКА ДЛЯ ФОРМЫ
+.application__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+// ОБЕРТКА ДЛЯ ПЕРВЫХ ДВУХ БЛОКОВ
+.form__group-wrapper {
+  display: flex;
+  margin-bottom: 70px;
+
+  gap: 80px;
+}
+
+.form__group {
+  flex-grow: 1;
+  padding: 0;
+
+  border: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  // миксин не получается подключить
+  // @include reset;
+}
+
+.form__title {
+  margin-bottom: 76px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $ff-oswald;
+  color: #000000;
+}

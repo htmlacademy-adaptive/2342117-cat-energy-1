@@ -1,0 +1,17 @@
+.form-title-comments {
+  margin-bottom: 78px;
+}
+
+.form-input-aria {
+  width: 100%;
+  min-width: 280px;
+  min-height: 150px;
+  padding: 9px 20px;
+
+  & placeholder {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $ff-oswald;
+    text-transform: uppercase;
+  }
+}

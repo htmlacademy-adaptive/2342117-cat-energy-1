@@ -1,0 +1,32 @@
+// Не пойму как подключать др стр. Как подключить хэдэр формы (куда?), пока продублирую код.
+.main-header__conteiner {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.application__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 66px 0;
+}
+
+.application__title {
+  margin: 0 0 55px;
+  padding: 0;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-family: $ff-oswald;
+}
+
+.application__text {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 30px;
+  font-family: $ff-oswald;
+  text-transform: uppercase;
+}

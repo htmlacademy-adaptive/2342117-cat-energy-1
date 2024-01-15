@@ -1,0 +1,30 @@
+.form__group--check {
+  margin-bottom: 65px;
+}
+
+.form-title-check {
+  margin-bottom: 62px;
+}
+
+.list-check {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50px;
+}
+
+.control__item-check {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 65px;
+}
+
+.control__input--check {
+  // min-width: 30px;
+  // min-height: 30px;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+// проверить лейблы

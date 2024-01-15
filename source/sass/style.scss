@@ -1,44 +1,70 @@
-@import "./base/base.scss";
+// БАЗОВЫЕ СВОЙСТВА
+@import "./base/variables.scss";
 
 @import "./base/fonts.scss";
+
+@import "./base/base.scss";
+
+@import "./base/visually-hidden.scss";
 
 @import "./base/main.scss";
 
 @import "./base/page-wrapper.scss";
 
-@import "./base/variables.scss";
+@import "./base/base-form.scss";
 
-@import "./base/visually-hidden.scss";
+// МИКСИНЫ
+@import "../sass/mixins";
 
-// БЛОКИ
-@import "./bloks/button.scss";
+// БЛОКИ - INDEX
+@import "../sass/bloks/button.scss";
 
-@import "./bloks/container.scss";
+@import "../sass/bloks/container.scss";
 
-@import "./bloks/container.scss";
+@import "../sass/bloks/page-title.scss";
 
-@import "./bloks/example.scss";
+@import "../sass/bloks/example.scss";
 
-@import "./bloks/logo-html.scss";
+@import "../sass/bloks/logo-html.scss";
 
-@import "./bloks/main-footer.scss";
+@import "../sass/bloks/main-header.scss";
 
-@import "./bloks/main-header.scss";
+@import "../sass/bloks/map.scss";
 
-@import "./bloks/map.scss";
+@import "../sass/bloks/nav.scss";
 
-@import "./bloks/nav.scss";
+@import "../sass/bloks/offer.scss";
 
-@import "./bloks/offer.scss";
+@import "../sass/bloks/promo.scss";
 
-@import "./bloks/page-title.scss";
+@import "../sass/bloks/site-list.scss";
 
-@import "./bloks/promo.scss";
+@import "../sass/bloks/slider.scss";
 
-@import "./bloks/site-list.scss";
+@import "../sass/bloks/social.scss";
 
-@import "./bloks/slider.scss";
+@import "../sass/bloks/main-footer.scss";
 
-@import "./bloks/social.scss";
+@import "../sass/bloks/technology.scss";
 
-@import "./bloks/technology.scss";
+//  БЛОКИ - FORM
+
+@import "../sass/bloks-form/application.scss";
+
+@import "./bloks-form/form-data.scss";
+
+@import "./bloks-form/form-contacts.scss";
+
+@import "./bloks-form/form-comments.scss";
+
+@import "./bloks-form/form-check.scss";
+
+@import "./bloks-form/form-radio.scss";
+
+@import "./bloks-form/form-order.scss";
+
+@import "./bloks-form/form.scss";
+
+@import "./bloks-form/form-input.scss";
+
+@import "./bloks-form/form-label.scss";
