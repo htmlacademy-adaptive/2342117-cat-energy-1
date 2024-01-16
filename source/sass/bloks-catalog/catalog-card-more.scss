@@ -1,0 +1,37 @@
+catalog__item--more {
+  // display: flex;
+  // flex-grow: 1;
+  padding: 50px 20px 40px;
+}
+
+.catalog__card-title--more {
+  margin: 0 0 26px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $ff-oswald;
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.catalog__text--more {
+  margin: 0 0 90px;
+
+  line-height: 18px;
+}
+
+.button--more {
+  color: #444444;
+
+  background-color: #f2f2f2;
+
+  // получается перебить активности основной кнопки
+  & :hover {
+    background-color: #ebebeb;
+  }
+
+  & :focus {
+    background-color: #969090;
+  }
+}

@@ -1,0 +1,18 @@
+.supplementary__container {
+  display: flex;
+}
+
+.supplementary-wrapper {
+  // display: grid;
+
+  // grid-template-columns: repeat(4, auto);
+}
+
+.supplementary__list {
+  display: grid;
+
+  list-style: none;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+// зеленые полоски

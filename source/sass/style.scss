@@ -11,8 +11,6 @@
 
 @import "./base/page-wrapper.scss";
 
-@import "./base/base-form.scss";
-
 // МИКСИНЫ
 @import "../sass/mixins";
 
@@ -68,3 +66,15 @@
 @import "./bloks-form/form-input.scss";
 
 @import "./bloks-form/form-label.scss";
+
+// БЛОКИ - КАТАЛОГ
+
+@import "./bloks-catalog/catalog.scss";
+
+@import "./bloks-catalog/catalog-description.scss";
+
+@import "./bloks-catalog/catalog-table.scss";
+
+@import "./bloks-catalog/catalog-card-more.scss";
+
+@import "./bloks-catalog/supplementary-container.scss";

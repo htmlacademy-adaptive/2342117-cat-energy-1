@@ -1,0 +1,21 @@
+.catalog__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__table-item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 10px;
+
+  border-bottom: 1px solid #cdcdcd;
+}
+
+// .catalog__table-title {
+// }
+
+// .catalog__table-value {
+
+// }

@@ -1,6 +1,108 @@
-@mixin reset() {
-  margin: 0;
-  padding: 0;
+// // первый микс (сброс ul), применил в form.scss на 25 строке. Не сработало, поэтому все миксины подготовил и закомментировал. Хотелось бы немного разобраться с ними. Не пойму как применять и организовать.
 
-  list-style: none;
-}
+// @mixin reset() {
+//   margin: 0;
+//   padding: 0;
+
+//   list-style: none;
+// }
+
+// // заголовок
+// @mixin font-page-title() {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 60px;
+//   line-height: 60px;
+//   font-family: $ff-oswald;
+//   color: #000000;
+// }
+
+// // навигация хэдэр
+// @mixin font-navigation() {
+//   color: #111111;
+
+//   font-family: $ff-oswald;
+//   font-size: 20px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   text-transform: uppercase;
+// }
+
+// // лэйбл для форм
+
+// @mixin font-label() {
+// color: #444444;
+// font-family: Oswald;
+// font-size: 20px;
+// font-style: normal;
+// font-weight: 400;
+// line-height: normal;
+// text-transform: uppercase;
+// }
+
+// // legend
+
+// @mixin font-form-title() {
+// color: #444444;
+// font-family: Oswald;
+// font-size: 20px;
+// font-style: normal;
+// font-weight: 400;
+// line-height: normal;
+// text-transform: uppercase;
+// }
+
+// @mixin font-placeholder() {
+//   color: #444444;
+//   font-family: Oswald;
+//   font-size: 20px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   text-transform: uppercase;
+// }
+
+// // плейсхолдер текст ариа
+// @mixin font-placeholder-textarea() {
+// color: #444444;
+// font-family: Oswald;
+// font-size: 20px;
+// font-style: normal;
+// font-weight: 400;
+// line-height: 30px;
+// text-transform: uppercase;
+// }
+
+// // текст в кнопке
+// @mixin font-button() {
+// color: #ffffff;
+// text-align: center;
+// font-family: Oswald;
+// font-size: 20px;
+// font-style: normal;
+// font-weight: 400;
+// line-height: 26px;
+// text-transform: uppercase;
+// }
+
+// // локация
+// @mixin font-map-title() {
+
+// color: #111111;
+// font-family: Oswald;
+// font-size: 20px;
+// font-style: normal;
+// font-weight: 400;
+// line-height: 26px;
+// text-transform: uppercase;
+// }
+
+// @mixin font-map-address() {
+// color:#444444;
+// font-family: Lato;
+// font-size: 16px;
+// font-style: normal;
+// font-weight: 400;
+// line-height: 20px;
+// }
