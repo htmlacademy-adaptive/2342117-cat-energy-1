@@ -7,8 +7,6 @@
   padding-bottom: 40px;
 }
 
-// main-footer.scss должен подключаться ниже social.scss - я этого не понимаю.
-// КАК блок main-footer подключить ниже social, если блоки (сас файлы) идут в алфавитном порядке ?
 .main-footer__social {
   width: 100%;
   margin-bottom: 20px;

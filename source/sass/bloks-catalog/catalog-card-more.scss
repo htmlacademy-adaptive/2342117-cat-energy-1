@@ -1,6 +1,4 @@
 catalog__item--more {
-  // display: flex;
-  // flex-grow: 1;
   padding: 50px 20px 40px;
 }
 
@@ -26,7 +24,7 @@ catalog__item--more {
 
   background-color: #f2f2f2;
 
-  // получается перебить активности основной кнопки
+  // не получается перебить активности основной кнопки
   & :hover {
     background-color: #ebebeb;
   }
