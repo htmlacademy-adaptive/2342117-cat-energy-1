@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Cat energy</title>
+    <link href="css/style.min.css" rel="stylesheet">
     <base href="https://htmlacademy-adaptive.github.io/2342117-cat-energy-1/3/">
 </head>
 
   <body class="body">
     <div class="page-wrapper">
       <header class="main-header">
-        <div class="main-header__conteiner container">
+        <div class="main-header__container container">
           <a class="logo-image logo" href="index.html">
             <img src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
             <img src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
@@ -18,7 +19,7 @@
 
           <!-- НАВИГАЦИЯ -->
 
-          <nav class="main-header__navigation nav">
+          <nav class="main-header__navigation nav nav--close">
             <button class="main-header__toggle nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
@@ -41,7 +42,7 @@
 
       <main class="main">
         <section class="catalog">
-          <div class="catalog__conteiner container">
+          <div class="catalog__container container">
             <h1 class="catalog__title page-title">Каталог продукции</h1>
             <!-- <div class="catalog__card card">  а нам нужен вообще этот див ? -->
 
@@ -244,9 +245,9 @@
               </li>
 
               <li class="catalog__item catalog__item--more">
-                <h3 class="catalog__title">Показать еще 100500 товаров</h3>
-                <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-                <a class="catalog__link link-button link" href="#">Показать все</a>
+                <h3 class="catalog__card-title--more">Показать еще 100500 товаров</h3>
+                <p class="catalog__text--more">На самом деле вкусов гораздо больше!</p>
+                <a class="catalog__link button button--more" href="#">Показать все</a>
               </li>
             </ul>
           </div>
@@ -289,8 +290,8 @@
               </ul>
             </div>
             <div class="supplementary__proposal">
-              <img src="img/cat-in-box.jpg" alt="кот в чехле." width="245" height="288">
-              <p class="supplementary__text">Закажите все и получите чехол для кота в подарок!</p>
+              <p class="supplementary__text">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+              <!-- снова не получается перенестти строку с помощью символов, кроме br -->
             </div>
           </div>
         </section>
@@ -323,25 +324,25 @@
         <section class="main-footer__container container">
           <h3 class="visually-hidden">Социальные сети.</h3>
           <a class="main-footer__logo" href="index.html">
-            <img src="img/footer-logo.svg" alt="Логотип." width="128" height="24">
+            <img src="img/svg/logo-name.svg" alt="Логотип." width="128" height="24">
           </a>
 
           <ul class="main-footer__social social site-list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
-                <img src="img/vkontakte.svg" alt="vkontakte." width="28" height="22">
+                <img src="./img/svg/vkontakte.svg" alt="vkontakte." width="28" height="22">
                 <span class="visually-hidden">Мы в Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="img/youtube.svg" alt="youtube." width="28" height="22">
+                <img src="./img/svg/youtube.svg" alt="youtube." width="28" height="22">
                 <span class="visually-hidden">Мы на YouTube.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
-                <img src="img/telegram.svg" alt="telegram." width="28" height="22">
+                <img src="./img/svg/telegram.svg" alt="telegram." width="28" height="22">
                 <span class="visually-hidden">Мы в Телеграм.</span>
               </a>
             </li>
