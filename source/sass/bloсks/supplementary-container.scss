@@ -1,60 +1,38 @@
 .supplementary__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
-
-// .supplementary-wrapper {
-
-// }
 
 .supplementary__list {
-  display: grid;
-
-  list-style: none;
-
-  grid-template-rows: repeat(4, 1fr);
+  display: flex;
+  flex-direction: column;
+  // margin: 0;
+  padding: 0;
 }
 
-// не забыть зеленые полоски
-
 .supplementary__item {
-  display: grid;
-  padding: 15px 0 17px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 19px;
+}
 
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
+.supplementary__title-main {
+  margin-bottom: 36px;
 
-  grid-template-columns: repeat(4, 1fr);
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .supplementary__title {
   margin: 0;
 
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   font-family: $ff-oswald;
   text-align: center;
   color: #222222;
   text-transform: uppercase;
-
-  grid-column: 1/2;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.supplementary__description {
-  margin: 0;
-
-  grid-column: 2/3;
-}
-
-.supplementary__price {
-  margin: 0;
-
-  grid-column: 3/4;
-}
-
-.supplementary__link {
-  grid-column: 4/5;
 }
 
 .supplementary__proposal {
@@ -73,11 +51,12 @@
   background-size: auto, cover;
 }
 
-// шрифт наследуется от тела?
 .supplementary__text {
   margin: 0;
+  padding: 0;
 
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
 }

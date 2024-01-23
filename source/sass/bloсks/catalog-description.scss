@@ -1,39 +1,29 @@
-// див
-.catalog__description {
-  max-height: 430px;
-  padding: 81px 38px;
-
-  background-color: #f2f2f2;
-}
+// КАРТОЧКА ТОВАРА
 
 .catalog__link-title {
-  // display: block;
+  display: block;
+  margin: 0;
+
   text-decoration: none;
 }
 
 .catalog__card-title {
   margin: 0 0 23px;
 
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: $ff-oswald;
   text-align: center;
   color: #222222;
   text-transform: uppercase;
 }
 
-.catalog__link-image {
-  display: block;
-  // не понимаю что ограничивает размеры картинки, да и вообще запутался
-}
+// обертка содержания карточки
+// .catalog__item-cover {
+//   background-color: #f2f2f2;
+// }
 
-.catalog__image {
-  position: absolute;
-  top: -3%;
-  left: 30%;
-  z-index: 1;
-
-  display: block;
-
-  // transform: translate(,);
-}
+// .catalog__link-image {
+//   display: block;
+//   margin-top: -20px;
+// }
