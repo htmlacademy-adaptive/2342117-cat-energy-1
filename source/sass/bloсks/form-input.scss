@@ -1,13 +1,7 @@
 .form__input {
   width: 100%;
-  height: 52px;
-  padding: 11px 20px;
-
-  font-style: normal;
-  font-size: 20px;
-  font-family: $ff-lato;
-  color: #444444;
-  text-transform: uppercase;
+  height: 45px;
+  padding: 14px 15px 13px;
 
   background-color: #ffffff;
   border: 1px solid #e7e7e7;
@@ -15,12 +9,13 @@
   appearance: none;
 
   & placeholder {
-    font-size: 20px;
-    line-height: normal;
+    font-size: 16px;
+    line-height: 18px;
     font-family: $ff-oswald;
     color: #444444;
     text-transform: uppercase;
   }
+  // барсик не реагирует на размер шрифта, да и вообще плейсхолдеры
 }
 
 .form-input[type="textarea"] {

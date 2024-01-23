@@ -1,0 +1,16 @@
+.form__group--radio {
+  margin-bottom: 45px;
+}
+
+// Запутался. Задаем бордер и падинг для ul или fieldset?
+
+.control--radio {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 22px 0 19px;
+
+  border: 1px solid #e7e7e7;
+
+  gap: 13px;
+}

@@ -1,80 +1,85 @@
-// БАЗОВЫЕ СВОЙСТВА
 @import "./base/variables.scss";
 
 @import "./base/fonts.scss";
 
+// МИКСИНЫ
+@import "./base/mixins.scss";
+
+// БАЗОВЫЕ СВОЙСТВА
 @import "./base/base.scss";
 
 @import "./base/visually-hidden.scss";
 
-@import "./base/main.scss";
-
 @import "./base/page-wrapper.scss";
 
-// МИКСИНЫ
-@import "../sass/mixins";
+@import "./base/main.scss";
 
-// БЛОКИ - INDEX
-@import "../sass/bloks/button.scss";
+//  ОБЩИЕ БЛОКИ
+@import "./bloсks/button.scss";
 
-@import "../sass/bloks/container.scss";
+@import "./bloсks/container.scss";
 
-@import "../sass/bloks/page-title.scss";
+@import "./bloсks/page-title.scss";
 
-@import "../sass/bloks/example.scss";
+// БЛОКИ HEADER
+@import "./bloсks/logo-header.scss";
 
-@import "../sass/bloks/logo-html.scss";
+@import "./bloсks/site-list.scss";
 
-@import "../sass/bloks/social.scss";
+@import "./bloсks/nav.scss";
 
-@import "../sass/bloks/main-header.scss";
+@import "./bloсks/main-header.scss";
 
-@import "../sass/bloks/map.scss";
+// БЛОКИ INDEX
 
-@import "../sass/bloks/nav.scss";
+@import "./bloсks/promo.scss";
 
-@import "../sass/bloks/offer.scss";
+@import "./bloсks/offer.scss";
 
-@import "../sass/bloks/promo.scss";
+@import "./bloсks/technology.scss";
 
-@import "../sass/bloks/site-list.scss";
+@import "./bloсks/slider.scss";
 
-@import "../sass/bloks/slider.scss";
-
-@import "../sass/bloks/main-footer.scss";
-
-@import "../sass/bloks/technology.scss";
+@import "./bloсks/example.scss";
 
 //  БЛОКИ - FORM
 
-@import "../sass/bloks-form/application.scss";
+@import "./bloсks/application.scss";
 
-@import "./bloks-form/form-data.scss";
+@import "./bloсks/form.scss";
 
-@import "./bloks-form/form-contacts.scss";
+@import "./bloсks/form-data.scss";
 
-@import "./bloks-form/form-comments.scss";
+@import "./bloсks/form-radio.scss";
 
-@import "./bloks-form/form-check.scss";
+@import "./bloсks/form-contacts.scss";
 
-@import "./bloks-form/form-radio.scss";
+@import "./bloсks/form-comments.scss";
 
-@import "./bloks-form/form-order.scss";
+@import "./bloсks/form-check.scss";
 
-@import "./bloks-form/form.scss";
+@import "./bloсks/form-order.scss";
 
-@import "./bloks-form/form-input.scss";
+@import "./bloсks/form-input.scss";
 
-@import "./bloks-form/form-label.scss";
+@import "./bloсks/form-label.scss";
 
-// БЛОКИ - КАТАЛОГ
+// БЛОКИ - CATALOG
+@import "./bloсks/catalog.scss";
 
-@import "./bloks-catalog/catalog.scss";
+@import "./bloсks/catalog-description.scss";
 
-@import "./bloks-catalog/catalog-description.scss";
+@import "./bloсks/catalog-table.scss";
 
-@import "./bloks-catalog/catalog-table.scss";
+@import "./bloсks/catalog-card-more.scss";
 
-@import "./bloks-catalog/catalog-card-more.scss";
+@import "./bloсks/supplementary-container.scss";
 
-@import "./bloks-catalog/supplementary-container.scss";
+// БЛОКИ FOOTER
+@import "./bloсks/logo-html.scss";
+
+@import "./bloсks/map.scss";
+
+@import "./bloсks/social.scss";
+
+@import "./bloсks/main-footer.scss";

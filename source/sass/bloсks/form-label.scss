@@ -1,10 +1,11 @@
 .form__label {
+  display: flex;
+  align-items: center;
+
   font-weight: 400;
-  font-size: 20px;
-  line-height: normal;
+  font-size: 16px;
+  line-height: 18px;
   font-family: $ff-oswald;
   color: #444444;
   text-transform: uppercase;
-
-  grid-column: 1/2;
 }

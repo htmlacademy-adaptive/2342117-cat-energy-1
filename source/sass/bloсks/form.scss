@@ -1,0 +1,71 @@
+// ОБЕРТКА ДЛЯ ФОРМЫ
+.application__wrapper {
+  width: 100%;
+  max-width: 1260px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0 20px 32px;
+}
+
+.form__group {
+  border: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  // миксин не получается подключить
+  // @include reset;
+}
+
+.form__item {
+  display: flex;
+  margin-bottom: 14px;
+
+  column-gap: 13px;
+}
+
+//   не соображаю как сделать зеленую полоску
+// Див перечеркивает заголовок, z-index  не помогает
+// Псевдоэлементы не позволяют установить ширину больше родителя, и снова z-index
+
+.form__title {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 26px;
+  font-family: $ff-oswald;
+  color: #000000;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 50%;
+  //   z-index: 1;
+
+  //   min-width: 320px;
+  //   max-width: 1440px;
+
+  //   border: solid 2px #68b738;
+  // }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 50%;
+
+  //   width: 100%;
+
+  //   border: solid 2px #68b738;
+  // }
+}
+
+.control__item {
+  display: flex;
+  flex-direction: row-reverse;
+}

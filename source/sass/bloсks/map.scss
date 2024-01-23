@@ -10,7 +10,13 @@
   display: grid;
   padding: 26px 0;
 
+  background-color: #ffffff;
+
   grid-template-columns: 1fr 1fr;
+
+  &--form {
+    background-color: #f2f2f2;
+  }
 }
 
 .map__title {

@@ -1,10 +1,9 @@
-.logo {
+.main__logo-header {
   display: block;
   width: fit-content;
 
   cursor: pointer;
 
-  // не понял,откуда мы взяли этот модификатор. Но добавлю его в html к .logo
   &--full {
     display: grid;
     align-items: center;
