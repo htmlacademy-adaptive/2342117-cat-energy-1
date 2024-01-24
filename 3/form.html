@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Cat energy</title>
     <link href="css/style.min.css" rel="stylesheet">
     <base href="https://htmlacademy-adaptive.github.io/2342117-cat-energy-1/3/">
@@ -12,9 +13,9 @@
     <div class="page-wrapper">
       <header class="main-header">
         <div class="main-header__container container">
-          <a class="logo-image logo" href="index.html">
-            <img src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
-            <img src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
+          <a class="main__logo-header" href="index.html">
+            <img class="logo__cat-header" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
+            <img class="logo__name-header" src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
           </a>
 
           <!-- НАВИГАЦИЯ -->
@@ -32,7 +33,7 @@
                   <a class="site-list__link" href="catalog.html">каталог продукции</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link  site-list__link--current" aria-current="page" href="#">подбор программы</a>
+                  <a class="site-list__link site-list__link--current" aria-current="page" href="#">подбор программы</a>
                 </li>
               </ul>
             </div>
@@ -45,7 +46,7 @@
         <section class="application">
           <div class="application__container container">
             <h1 class="application__title page-title">Подбор программы</h1>
-            <p class="application__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+            <p class="application__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
           </div>
 
           <!-- ФОРМА -->
@@ -55,9 +56,9 @@
               <div class="form__group-wrapper">
                 <fieldset class="form__group form__group--data">
                   <ul class="form__list list-reset">
-                    <li class="form__item">
+                    <li class="form__item form__item--data">
                       <label class="form__label" for="name">Имя:*</label>
-                      <input class="form__input form-input" type="text" id="name" placeholder="барсик" name="name" required>
+                      <input class="form__input form-input" type="text" id="name" placeholder="Барсик" name="name" required>
                     </li>
 
                     <li class="form__item">
@@ -75,7 +76,7 @@
                 <!-- радио кнопки -->
 
                 <fieldset class="form__group form__group--radio">
-                  <ul class="control list-reset">
+                  <ul class="control list-reset control--radio">
                     <li class="control__item">
                       <label class="control__label form__label" for="reset">Похудение</label>
                       <input class="control__input control__input--radio" type="radio" value="slimming" id="reset" name="name" checked>
@@ -97,16 +98,17 @@
               <!-- контактные данные -->
 
               <fieldset class="form__group form__group--contacts">
-                <legend class="form__title">Контактные данные (владельца кота)</legend>
-                <ul class="form__list list-contacts list-reset">
+                <!-- <div class="line"></div> -->
+                <legend class="form__title form__title--contacts">Контактные данные <br>(владельца кота)</legend>
+                <ul class="form__list list-reset">
                   <li class="form__item">
-                    <label class="form__label" for="email">Ваш email:*</label>
+                    <label class="form__label" for="email">e-mail:*</label>
                     <span class="form__input-container form__input-container--mail">
                       <input class="form__input" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
                     </span>
                   </li>
                   <li class="form__item">
-                    <label class="form__label" for="phone">телефона:*</label>
+                    <label class="form__label" for="phone">телефон:*</label>
                     <span class="form__input-container form__input-container--phone">
                       <input class="form__input" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="phone" required>
                     </span>
@@ -116,34 +118,39 @@
               <!-- комментарии -->
 
               <fieldset class="form__group form__group--comments">
-                <legend class="form__title form-title-comments">Комментарии</legend>
+
+                <legend class="form__title form__title--comments">Комментарии
+                  <!-- <div class="line"></div> -->
+                </legend>
+
                 <label class="visually-hidden">Комментарий владельца</label>
-                <textarea class="form-input form-input-aria" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="form-input" id="comment" rows="9" cols="32" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
 
               <!-- Чек боксы -->
 
               <fieldset class="form__group form__group--check">
-                <legend class="form__title form-title-check">Дополнительно</legend>
+                <!-- <div class="line"></div> -->
+                <legend class="form__title form-title--check">Дополнительно</legend>
 
                 <ul class="control list-reset list-check">
-                  <li class="control__item control__item-check">
+                  <li class="control__item">
                     <label class="control__label form__label label-check" for="sugar">Сахарозаменитель</label>
                     <input class="control__input control__input--check" type="checkbox" id="sugar" name="sugar" checked>
                   </li>
 
-                  <li class="control__item control__item-check">
+                  <li class="control__item">
                     <label class="control__label form__label label-check" for="water">Питьевая вода</label>
                     <input class="control__input control__input--check" type="checkbox" id="water" name="water">
                   </li>
 
-                  <li class="control__item control__item-check">
+                  <li class="control__item">
                     <label class="control__label form__label label-check" for="milk">Молоко</label>
                     <input class="control__input control__input--check" type="checkbox" id="milk" name="milk">
                   </li>
 
-                  <li class="control__item control__item-check">
-                    <label class="control__label form__label label-check" for="vitamins">Витамины</label>
+                  <li class="control__item">
+                    <label class="control__label form__label" for="vitamins">Витамины</label>
                     <input class="control__input control__input--check" type="checkbox" id="vitamins" name="vitamins">
                   </li>
                 </ul>
@@ -165,9 +172,9 @@
         <section class="main-footer__map-container map">
           <div class="map__container container">
             <h2 class="visually-hidden">Местонахождение.</h2>
-            <div class="map__contact">
-              <h3 class="map__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-              <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+            <div class="map__contact map__contact--grey">
+              <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
+              <p class="map__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург<span></p>
             </div>
           </div>
           <div class="map__iframe-container">
@@ -186,33 +193,33 @@
         <section class="main-footer__container container">
           <h2 class="visually-hidden">Социальные сети.</h2>
           <a class="main-footer__logo" href="index.html">
-            <img src="img/svg/logo-name.svg" alt="Логотип." width="128" height="24">
+            <img class="logo__name-footer" src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
           </a>
 
           <ul class="main-footer__social social site-list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
-                <img src="./img/svg/vkontakte.svg" alt="vkontakte." width="28" height="22">
+                <img src="img/svg/vkontakte.svg" alt="vkontakte." width="28" height="22">
                 <span class="visually-hidden">Мы в Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="./img/svg/youtube.svg" alt="youtube." width="28" height="22">
+                <img src="img/svg/youtube.svg" alt="youtube." width="28" height="22">
                 <span class="visually-hidden">Мы на YouTube.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
-                <img src="./img/svg/telegram.svg" alt="telegram." width="28" height="22">
+                <img src="img/svg/telegram.svg" alt="telegram." width="28" height="22">
                 <span class="visually-hidden">Мы в Телеграм.</span>
               </a>
             </li>
           </ul>
 
-          <a class="main-footer__logo-html logo-html" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="main-footer__logo-html" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="logo-html__text">HTML Academy</span>
-            <img src="img/svg/logo-html.svg" alt="Логотип html academy." width="27" height="34">
+            <img class="logo-html" src="img/svg/logo-html.svg" alt="Логотип html academy." width="27" height="34">
           </a>
         </section>
       </footer>
