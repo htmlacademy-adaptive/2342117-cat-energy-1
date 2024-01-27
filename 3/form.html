@@ -13,9 +13,9 @@
     <div class="page-wrapper">
       <header class="main-header">
         <div class="main-header__container container">
-          <a class="main__logo-header" href="index.html">
-            <img class="logo__cat-header" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
-            <img class="logo__name-header" src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
+          <a class="main-header__logo logo logo--full" href="index.html">
+            <img class="logo__cat-img" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
+            <img class="logo__cat-text" src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
           </a>
 
           <!-- НАВИГАЦИЯ -->
@@ -24,19 +24,17 @@
             <button class="main-header__toggle nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
-            <div class="nav__wrapper">
-              <ul class="nav__list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="index.html">главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html">каталог продукции</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link site-list__link--current" aria-current="page" href="#">подбор программы</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--current" aria-current="page" href="#">подбор программы</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </header>
@@ -44,21 +42,25 @@
       <main class="main">
 
         <section class="application">
-          <div class="application__container container">
-            <h1 class="application__title page-title">Подбор программы</h1>
-            <p class="application__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
-          </div>
+          <header class="application__header">
+
+            <div class="application__container container">
+              <h1 class="application__title page-title">Подбор программы</h1>
+              <p class="application__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
+            </div>
+          </header>
 
           <!-- ФОРМА -->
 
-          <div class="application__wrapper">
+          <div class="application__wrapper container">
             <form class="application__form form" aria-label="заполните форму." action="https://echo.htmlacademy.ru" method="post">
+
               <div class="form__group-wrapper">
-                <fieldset class="form__group form__group--data">
-                  <ul class="form__list list-reset">
-                    <li class="form__item form__item--data">
+                <fieldset class="form__group form__group-data">
+                  <ul class="form__list form__list-data">
+                    <li class="form__item">
                       <label class="form__label" for="name">Имя:*</label>
-                      <input class="form__input form-input" type="text" id="name" placeholder="Барсик" name="name" required>
+                      <input class="form__input" type="text" id="name" placeholder="Барсик" name="name" required>
                     </li>
 
                     <li class="form__item">
@@ -67,29 +69,30 @@
                     </li>
 
                     <li class="form__item">
-                      <label class="form__label" for="age">Возраст (лет):</label>
+                      <label class="form__label" for="age">Возраст&nbsp;(лет):</label>
                       <input class="form__input" type="text" id="age" placeholder="7" name="age">
                     </li>
                   </ul>
                 </fieldset>
 
                 <!-- радио кнопки -->
-
-                <fieldset class="form__group form__group--radio">
-                  <ul class="control list-reset control--radio">
+                <!-- в этом блоке у меня не получается задать падинг и сделать правильный оступ от других блоков.
+                  падинг нужно задавать ul или fieldset? - бордер на ul.-->
+                <fieldset class="form__group form__group-radio">
+                  <ul class="control form__list form__list-radio">
                     <li class="control__item">
                       <label class="control__label form__label" for="reset">Похудение</label>
-                      <input class="control__input control__input--radio" type="radio" value="slimming" id="reset" name="name" checked>
+                      <input class="control__input control__input-radio" type="radio" value="slimming" id="reset" name="name" checked>
                     </li>
 
                     <li class="control__item">
                       <label class="control__label form__label" for="set">Набор массы</label>
-                      <input class="control__input control__input--radio" type="radio" value="mass" id="set" name="set">
+                      <input class="control__input control__input-radio" type="radio" value="mass" id="set" name="set">
                     </li>
 
                     <li class="control__item">
                       <label class="control__label form__label" for="advice">Не знаю (Нужен ваш совет)</label>
-                      <input class="control__input control__input--radio" type="radio" value="advice" id="advice" name="advice">
+                      <input class="control__input control__input-radio" type="radio" value="advice" id="advice" name="advice">
                     </li>
                   </ul>
                 </fieldset>
@@ -97,10 +100,10 @@
 
               <!-- контактные данные -->
 
-              <fieldset class="form__group form__group--contacts">
+              <fieldset class="form__group form__group-contacts">
                 <!-- <div class="line"></div> -->
-                <legend class="form__title form__title--contacts">Контактные данные <br>(владельца кота)</legend>
-                <ul class="form__list list-reset">
+                <legend class="form__title form__title-contacts">Контактные данные <br>(владельца кота)</legend>
+                <ul class="form__list">
                   <li class="form__item">
                     <label class="form__label" for="email">e-mail:*</label>
                     <span class="form__input-container form__input-container--mail">
@@ -117,47 +120,47 @@
               </fieldset>
               <!-- комментарии -->
 
-              <fieldset class="form__group form__group--comments">
+              <fieldset class="form__group form__group-comments">
 
-                <legend class="form__title form__title--comments">Комментарии
+                <legend class="form__title form__title-comments">Комментарии
                   <!-- <div class="line"></div> -->
                 </legend>
 
                 <label class="visually-hidden">Комментарий владельца</label>
-                <textarea class="form-input" id="comment" rows="9" cols="32" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="form__input" id="comment" rows="9" cols="32" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
 
               <!-- Чек боксы -->
 
-              <fieldset class="form__group form__group--check">
+              <fieldset class="form__group form__group-check">
                 <!-- <div class="line"></div> -->
-                <legend class="form__title form-title--check">Дополнительно</legend>
+                <legend class="form__title">Дополнительно</legend>
 
-                <ul class="control list-reset list-check">
+                <ul class="form__list form__list-check">
                   <li class="control__item">
-                    <label class="control__label form__label label-check" for="sugar">Сахарозаменитель</label>
-                    <input class="control__input control__input--check" type="checkbox" id="sugar" name="sugar" checked>
+                    <label class="control__label form__label" for="sugar">Сахарозаменитель</label>
+                    <input class="control__input control__input-check" type="checkbox" id="sugar" name="sugar" checked>
                   </li>
 
                   <li class="control__item">
-                    <label class="control__label form__label label-check" for="water">Питьевая вода</label>
-                    <input class="control__input control__input--check" type="checkbox" id="water" name="water">
+                    <label class="control__label form__label" for="water">Питьевая вода</label>
+                    <input class="control__input control__input-check" type="checkbox" id="water" name="water">
                   </li>
 
                   <li class="control__item">
-                    <label class="control__label form__label label-check" for="milk">Молоко</label>
-                    <input class="control__input control__input--check" type="checkbox" id="milk" name="milk">
+                    <label class="control__label form__label" for="milk">Молоко</label>
+                    <input class="control__input control__input-check" type="checkbox" id="milk" name="milk">
                   </li>
 
                   <li class="control__item">
                     <label class="control__label form__label" for="vitamins">Витамины</label>
-                    <input class="control__input control__input--check" type="checkbox" id="vitamins" name="vitamins">
+                    <input class="control__input control__input-check" type="checkbox" id="vitamins" name="vitamins">
                   </li>
                 </ul>
               </fieldset>
 
               <div class="form__order">
-                <button class="form-button button" type="submit">отправить заявку
+                <button class="form__button button" type="submit">отправить заявку
                 </button>
                 <p class="form__note">* — Обязательные поля</p>
               </div>
@@ -174,9 +177,10 @@
             <h2 class="visually-hidden">Местонахождение.</h2>
             <div class="map__contact map__contact--grey">
               <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
-              <p class="map__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург<span></p>
+              <p class="map__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
             </div>
           </div>
+
           <div class="map__iframe-container">
             <noscript>
               <a class="map__img" href="https://maps.app.goo.gl/wqFtRHes4bMVLsNz7">
@@ -192,8 +196,8 @@
 
         <section class="main-footer__container container">
           <h2 class="visually-hidden">Социальные сети.</h2>
-          <a class="main-footer__logo" href="index.html">
-            <img class="logo__name-footer" src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
+          <a class="main-footer__logo logo logo--footer" href="index.html">
+            <img class="logo__cat-text" src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
           </a>
 
           <ul class="main-footer__social social site-list">

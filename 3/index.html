@@ -13,9 +13,9 @@
     <div class="page-wrapper">
       <header class="main-header">
         <div class="main-header__container container">
-          <a class="main__logo-header logo-header--full" aria-current="page" href="index.html">
-            <img class="logo__cat-header" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
-            <img class="logo__name-header" src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
+          <a class="main-header__logo logo logo--full" aria-current="page" href="index.html">
+            <img class="logo__cat-img" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
+            <img class="logo__cat-text" src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
           </a>
 
           <!-- НАВИГАЦИЯ -->
@@ -24,19 +24,17 @@
             <button class="main-header__toggle nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
-            <div class="nav__wrapper">
-              <ul class="nav__list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link site-list__link--current" href="index.html" aria-current="page">главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html">каталог продукции</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="form.html">подбор программы</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--current" href="index.html" aria-current="page">главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">подбор программы</a>
+              </li>
+            </ul>
           </nav>
         </div>
 
@@ -68,7 +66,6 @@
                 <p class="offer__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="offer__link" href="catalog.html">Каталог Slim</a>
               </li>
-
               <li class="offer__item">
                 <h3 class="offer__title">Набор массы</h3>
                 <p class="offer__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -81,8 +78,9 @@
         <!-- TECHNOLOGY -->
 
         <section class="technology">
-          <h2 class="technology__title page-title">Как это работает</h2>
           <div class="technology__container container">
+            <h2 class="technology__title page-title">Как это работает</h2>
+
             <ul class="technology__list">
               <li class="technology__item technology__item--beneficial">Функциональное питание содержит только полезные питательные вещества.</li>
               <li class="technology__item technology__item--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -119,14 +117,14 @@
             <div class="example__slider slider">
               <div class="slider__container">
                 <div class="slider__item slider__item--before">
-                  <img class="slider__image-fat" src="img/cat-fat-mobile.png" alt="Толстый кот" width="280" height="256">
+                  <img class="slider__image slider__image--fat" src="img/cat-fat-mobile.png" alt="Толстый кот" width="280" height="256">
                 </div>
                 <div class="slider__item slider__item--after">
-                  <img class="slider__image-thin" src="img/cat-thin-mobile.png" alt="Стройный кот" width="280" height="256">
+                  <img class="slider__image slider__image--thin" src="img/cat-thin-mobile.png" alt="Стройный кот" width="280" height="256">
                 </div>
               </div>
               <div class="slider__change">
-                <!-- Управление слайдером -->
+                <!-- будет кнопка -->
               </div>
             </div>
           </div>
@@ -144,6 +142,7 @@
               <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
             </div>
           </div>
+
           <div class="map__iframe-container">
             <noscript>
               <a class="map__img" href="https://maps.app.goo.gl/wqFtRHes4bMVLsNz7">
@@ -159,8 +158,8 @@
 
         <section class="main-footer__container container">
           <h2 class="visually-hidden">Социальные сети.</h2>
-          <a class="main-footer__logo" href="index.html" aria-current="page">
-            <img class="logo__name-footer" src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
+          <a class="main-footer__logo logo logo--footer" href="index.html" aria-current="page">
+            <img class="logo__cat-text" src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
           </a>
 
           <ul class="main-footer__social social">
