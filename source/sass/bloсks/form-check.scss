@@ -1,30 +1,20 @@
-.form__group--check {
-  margin: 0 0 34px;
+.form__group-check {
+  margin: 23px 0 34px;
   padding: 0;
 }
 
-.form-title--check {
-  margin-bottom: 34px;
-}
-
-.list-check {
+.form__list-check {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: start;
+  margin-top: 34px;
 
   gap: 13px;
 }
 
-.control__item-check {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 65px;
-
-  gap: 15px;
-}
-
-.control__input--check {
+.control__input-check {
   width: 30px;
   height: 30px;
-  margin: 0;
+  margin: 0 15px 0 0;
 }

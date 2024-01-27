@@ -1,14 +1,8 @@
-.form__title--comments {
-  margin-bottom: 38px;
+.form__group-comments {
+  margin: 0 0 23px;
+  padding: 0;
 }
 
-.form-input-aria {
-  margin-bottom: 24px;
-
-  & placeholder {
-    font-size: 20px;
-    line-height: 30px;
-    font-family: $ff-oswald;
-    text-transform: uppercase;
-  }
+.form__title-comments {
+  margin-bottom: 38px;
 }

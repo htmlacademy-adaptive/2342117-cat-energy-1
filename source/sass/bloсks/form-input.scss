@@ -3,35 +3,38 @@
   height: 45px;
   padding: 14px 15px 13px;
 
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $ff-oswald;
+  color: #444444;
+  text-transform: uppercase;
+
   background-color: #ffffff;
   border: 1px solid #e7e7e7;
 
   appearance: none;
-
-  & placeholder {
-    font-size: 16px;
-    line-height: 18px;
-    font-family: $ff-oswald;
-    color: #444444;
-    text-transform: uppercase;
-  }
-  // барсик не реагирует на размер шрифта, да и вообще плейсхолдеры
 }
 
-.form-input[type="textarea"] {
-  appearance: textfield;
-}
+// ЭТО НУЖНО? из седоны
+// .form-input[type="textarea"] {
+//   appearance: textfield;
+// }
 
-.form-input {
-  & :hover {
+.form__input {
+  &:hover {
     border-color: #cdcdcd;
   }
 
-  & :focus {
+  &:focus {
     border-color: #444444;
+    outline: none;
   }
 
-  & :error {
-    border-color: #ff8282;
+  &:active {
+    // border-color: #282626;
   }
+}
+
+.form__input--error {
+  border-color: #ff8282;
 }

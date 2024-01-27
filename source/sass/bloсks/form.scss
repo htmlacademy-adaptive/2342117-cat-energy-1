@@ -7,17 +7,13 @@
   padding: 0 20px 32px;
 }
 
-.form__group {
-  border: none;
-}
-
-.list-reset {
+.form__list {
   margin: 0;
   padding: 0;
+}
 
-  list-style: none;
-  // миксин не получается подключить
-  // @include reset;
+.form__group {
+  border: none;
 }
 
 .form__item {
@@ -32,8 +28,6 @@
 // Псевдоэлементы не позволяют установить ширину больше родителя, и снова z-index
 
 .form__title {
-  position: relative;
-
   margin: 0;
   padding: 0;
 
@@ -41,31 +35,17 @@
   line-height: 26px;
   font-family: $ff-oswald;
   color: #000000;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 50%;
-  //   z-index: 1;
-
-  //   min-width: 320px;
-  //   max-width: 1440px;
-
-  //   border: solid 2px #68b738;
-  // }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 50%;
-
-  //   width: 100%;
-
-  //   border: solid 2px #68b738;
-  // }
 }
 
 .control__item {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $ff-oswald;
+  color: #444444;
+  text-transform: uppercase;
 }

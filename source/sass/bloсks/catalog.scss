@@ -27,11 +27,5 @@
 .catalog__item {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  min-height: 209px;
   padding: 20px 0;
-
-  &--more {
-    padding: 25px 0;
-  }
 }

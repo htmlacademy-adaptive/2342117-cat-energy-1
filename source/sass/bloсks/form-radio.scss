@@ -1,16 +1,31 @@
-.form__group--radio {
+.form__group-radio {
   margin-bottom: 45px;
+  padding: 0;
 }
 
-// Запутался. Задаем бордер и падинг для ul или fieldset?
-
-.control--radio {
+.form__list-radio {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 22px 0 19px;
+  // padding: 22px 0 19px;
 
   border: 1px solid #e7e7e7;
 
-  gap: 13px;
+  gap: 25px;
+}
+
+.control__item {
+  &:hover {
+    color: #222222;
+  }
+
+  &:focus {
+    color: #222222;
+
+    opacity: 0.3;
+  }
+
+  // &:active {
+  //   border-color: #282626;
+  // }
 }
