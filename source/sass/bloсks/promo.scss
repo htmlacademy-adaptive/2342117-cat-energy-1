@@ -18,11 +18,10 @@
   width: 100%;
 }
 
-// Когда будешь делать адаптацию поставь line-height: 36px; только на мобильных
+// при адаптации не забыть поставить line-height: 36px; только на мобильных
 .promo__title {
   margin-bottom: 25px;
 
-  font-family: $ff-oswald;
   color: inherit;
 }
 

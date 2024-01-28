@@ -25,8 +25,25 @@
 }
 
 .button:active {
-  background-color: #5eaa2f;
-
   color: rgba(255, 255, 255, 0.3);
-  opacity: 0.3;
+
+  background-color: #5eaa2f;
+}
+
+.button--light {
+  color: #444444;
+
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #969090;
+  }
 }

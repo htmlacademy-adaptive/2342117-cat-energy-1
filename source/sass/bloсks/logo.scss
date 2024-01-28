@@ -1,0 +1,30 @@
+.logo {
+  display: block;
+  width: fit-content;
+
+  color: #111111;
+
+  --color-logo-text: #111111;
+  fill: currentColor;
+
+  &--full {
+    display: grid;
+    align-items: center;
+
+    column-gap: 56px;
+
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.logo__cat-img {
+  display: block;
+  width: 33px;
+  height: 38px;
+}
+
+.logo__cat-text {
+  display: block;
+  width: 101px;
+  height: 18px;
+}
