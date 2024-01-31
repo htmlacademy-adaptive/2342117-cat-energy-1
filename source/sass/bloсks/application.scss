@@ -1,0 +1,23 @@
+.application__container {
+  width: 100%;
+  max-width: 1260px;
+  padding: 27px 20px 39px;
+}
+
+.application__title {
+  margin: 0 0 37px;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $ff-oswald;
+}
+
+.application__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-oswald;
+  text-transform: uppercase;
+}

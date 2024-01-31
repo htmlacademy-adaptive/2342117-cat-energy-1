@@ -1,0 +1,49 @@
+.button {
+  display: inline-block;
+  padding: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $ff-oswald;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $button-color;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:focus {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5eaa2f;
+}
+
+.button--light {
+  color: #444444;
+
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #969090;
+  }
+}

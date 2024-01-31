@@ -1,0 +1,32 @@
+.map {
+  position: relative;
+}
+
+.map--home {
+  background-color: #ffffff;
+}
+
+.map__contact {
+  display: grid;
+  padding: 26px 0;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.map__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $ff-oswald;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.map__address {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+}

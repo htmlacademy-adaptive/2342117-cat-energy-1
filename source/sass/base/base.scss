@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+// сетку на body не выстраиваем только в этом проекте или вообще никогда?
+body {
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $ff-lato;
+  color: #444444;
+
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+
+  object-fit: cover;
+}
+
+// работаю с этим
+// * {
+//   outline: 1px solid rgb(179, 7, 7) !important;
+// }

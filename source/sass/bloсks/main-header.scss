@@ -1,0 +1,7 @@
+// мин ширина есть на body, паддинг горизонтальный есть на container
+.main-header__container {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+}

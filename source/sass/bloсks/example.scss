@@ -1,0 +1,59 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__result-cover {
+  display: grid;
+
+  gap: 32px;
+  grid-template-columns: repeat(2, 124px);
+}
+
+.example__result-item {
+  padding: 14px 10px 13px;
+
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__result-value {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $ff-oswald;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.example__result-description {
+  display: block;
+  margin: 8px 8px -29px;
+  padding: 0 5px;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+
+  background-color: #eaeaea;
+}
+
+.example__price {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $ff-oswald;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}

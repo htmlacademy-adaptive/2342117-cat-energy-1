@@ -1,1 +1,68 @@
-// Начните писать стили здесь
+// @import "./outline.scss";
+
+@import "./base/variables.scss";
+
+@import "./base/fonts.scss";
+
+// МИКСИНЫ
+@import "./base/mixins.scss";
+
+// БАЗОВЫЕ СВОЙСТВА
+@import "./base/base.scss";
+
+@import "./base/visually-hidden.scss";
+
+@import "./base/page-wrapper.scss";
+
+@import "./base/main.scss";
+
+//  ОБЩИЕ БЛОКИ
+@import "./bloсks/button.scss";
+
+@import "./bloсks/container.scss";
+
+@import "./bloсks/page-title.scss";
+
+// БЛОКИ HEADER
+
+@import "./bloсks/logo.scss";
+
+@import "./bloсks/site-list.scss";
+
+@import "./bloсks/nav.scss";
+
+@import "./bloсks/main-header.scss";
+
+// БЛОКИ INDEX
+
+@import "./bloсks/promo.scss";
+
+@import "./bloсks/offer.scss";
+
+@import "./bloсks/technology.scss";
+
+@import "./bloсks/slider.scss";
+
+@import "./bloсks/example.scss";
+
+//  БЛОКИ - FORM
+
+@import "./bloсks/application.scss";
+
+@import "./bloсks/control.scss";
+
+@import "./bloсks/form.scss";
+
+// БЛОКИ - CATALOG
+@import "./bloсks/catalog.scss";
+
+@import "./bloсks/supplementary.scss";
+
+// БЛОКИ FOOTER
+@import "./bloсks/logo-html.scss";
+
+@import "./bloсks/map.scss";
+
+@import "./bloсks/social.scss";
+
+@import "./bloсks/main-footer.scss";
