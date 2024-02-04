@@ -4,6 +4,10 @@
   height: 24px;
   margin: 0;
   padding: 4px 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -21,8 +25,19 @@
   list-style: none;
 
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
-.nav--close .nav__list {
-  display: none;
+// .nav--close .nav__list {
+//   display: none;
+// }
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -4,6 +4,8 @@
 
   color: #111111;
 
+  cursor: pointer;
+
   --color-logo-text: #111111;
   fill: currentColor;
 
@@ -27,4 +29,18 @@
   display: block;
   width: 101px;
   height: 18px;
+}
+
+.logo--footer {
+  &:hover {
+    color: #3e3e3e;
+  }
+
+  &:focus {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
 }

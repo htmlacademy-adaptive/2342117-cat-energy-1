@@ -1,3 +1,22 @@
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    // justify-content: space-between;
+  }
+}
+
+.example__result {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .example {
   background-color: #eaeaea;
 }
@@ -56,4 +75,9 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }

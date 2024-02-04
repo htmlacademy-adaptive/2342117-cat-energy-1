@@ -1,6 +1,5 @@
 .promo__description {
-  margin: 0 -20px;
-
+  // margin: 0 -20px;
   color: #ffffff;
 
   background-color: rgba(104, 183, 56, 0.85);
@@ -12,6 +11,10 @@
   background-repeat: repeat, no-repeat;
   background-position: top;
   background-size: auto, cover;
+
+  @media (min-width: $tablet-width) {
+    width: 610px;
+  }
 }
 
 .promo__button {

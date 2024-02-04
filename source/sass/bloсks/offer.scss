@@ -1,14 +1,26 @@
 .offer__list {
+  background-color: #f2f2f2;
+}
+
+.offer__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .offer__item {
   padding: 30px 20px 18px;
 
-  background-color: #f2f2f2;
+  // размер задал, что бы разместить котов справа
+  @media (min-width: $tablet-width) {
+    width: 340px;
+  }
 }
 
 .offer__title {
@@ -35,4 +47,14 @@
   font-family: $ff-oswald;
   color: #000000;
   text-decoration: none;
+
+  cursor: pointer;
+
+  // &:hover {
+  //   большая стрелка
+  // }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

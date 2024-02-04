@@ -1,3 +1,9 @@
+.site-list__item {
+  position: relative;
+
+  text-align: center;
+}
+
 .site-list__link {
   display: block;
   padding: 23px 23px 22px;
@@ -8,4 +14,33 @@
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 10px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    left: 22px;
+
+    width: 168px;
+    height: 2px;
+
+    color: #000000;
+
+    background-color: #68b738;
+  }
 }
