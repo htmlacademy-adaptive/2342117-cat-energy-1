@@ -1,20 +1,39 @@
-// мин ширина есть на body, паддинг горизонтальный есть на container
 .main-header__container {
   position: relative;
 
   display: flex;
   justify-content: space-between;
+  padding: 13px 20px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px 20px;
+
+    grid-template-columns: auto, 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 20px 60px;
+
+    grid-template-columns: 1fr, 1fr;
+  }
 }
 
-// @media (min-width: $tablet-width) {
-//   .main-header__container {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 709px;
-//   }
-// }
+.main-header__logo {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 38px;
+}
+
+.main-header__navigation {
+  margin: 0;
+  padding: 0;
+}
 
 .main-header__toggle,
 .nav__toggle {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
   cursor: pointer;
 }

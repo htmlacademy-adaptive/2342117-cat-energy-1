@@ -15,6 +15,7 @@
 
 .map__title {
   margin: 0;
+  padding: 0 20px 0 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -26,7 +27,16 @@
 
 .map__address {
   margin: 0;
+  padding: 0 20px 0 0;
 
   font-size: 14px;
   line-height: 20px;
+}
+
+.map__iframe {
+  width: 100%;
+}
+
+.map__img {
+  display: block;
 }

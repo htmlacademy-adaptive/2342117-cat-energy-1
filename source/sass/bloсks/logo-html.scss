@@ -10,6 +10,12 @@
 
   fill: currentColor;
 
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+
+    gap: 23px;
+  }
+
   & svg {
     width: 27px;
     height: 34px;

@@ -1,3 +1,8 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+}
+
 .site-list__item {
   position: relative;
 
@@ -8,6 +13,7 @@
   display: block;
   padding: 23px 23px 22px;
 
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   font-family: $ff-oswald;
@@ -18,7 +24,19 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    font-size: 10px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
   }
 
   &:hover {

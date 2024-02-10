@@ -4,4 +4,16 @@
   line-height: 40px;
   font-family: $ff-oswald;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

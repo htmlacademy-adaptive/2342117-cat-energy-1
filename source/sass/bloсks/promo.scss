@@ -1,5 +1,16 @@
+.promo__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    padding: 0 0 0 60px;
+
+    grid-template-columns: 1fr, 1fr;
+  }
+}
+
+// div
 .promo__description {
-  // margin: 0 -20px;
+  padding: 27px 35px 25px;
+
   color: #ffffff;
 
   background-color: rgba(104, 183, 56, 0.85);
@@ -13,7 +24,57 @@
   background-size: auto, cover;
 
   @media (min-width: $tablet-width) {
-    width: 610px;
+    padding: 66px 90px 0;
+
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 80px 30px;
+
+    grid-column: 1/2;
+  }
+}
+
+.promo__title {
+  margin-bottom: 0 0 25px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: rgb(255, 255, 255);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding: 90;
+
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+}
+
+.promo__text {
+  margin: 0 0 25px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $ff-oswald;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
@@ -21,18 +82,30 @@
   width: 100%;
 }
 
-// при адаптации не забыть поставить line-height: 36px; только на мобильных
-.promo__title {
-  margin-bottom: 25px;
+.promo__img {
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    max-height: 609px;
+  }
 
-  color: inherit;
+  @media (min-width: $desktop-width) {
+    background-color: rgba(104, 183, 56, 0.85);
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/index-background-mobile.jpg");
+    background-repeat: repeat, no-repeat;
+    background-position: top;
+    background-size: auto, cover;
+
+    grid-column: 2/3;
+  }
 }
 
-.promo__text {
-  margin: 0;
+.promo__img-can {
+  width: 100%;
+  height: 499px;
 
-  font-size: 14px;
-  line-height: 14px;
-  font-family: $ff-oswald;
-  text-transform: uppercase;
+  object-fit: contain;
 }

@@ -1,44 +1,88 @@
 .offer__list {
-  background-color: #f2f2f2;
-}
-
-.offer__list {
+  display: grid;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .offer__item {
-  padding: 30px 20px 18px;
+  min-height: 266px;
+  padding: 0 20px 33px 18px;
 
-  // размер задал, что бы разместить котов справа
+  text-transform: uppercase;
+
+  background: rgb(242, 242, 242);
+
   @media (min-width: $tablet-width) {
-    width: 340px;
+    padding: 77px 63px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 61px 59px 52px;
+
+    // grid-template-columns: 1fr 1fr;
   }
 }
 
 .offer__title {
-  margin: 0;
+  margin: 0 0 29px 0;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   font-family: $ff-oswald;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin: 0 0 24px 0;
+
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 0;
+
+    text-align: center;
+  }
 }
 
 .offer__text {
-  margin: 0;
+  margin: 0 0 22px 0;
 
   font-size: 14px;
   line-height: 18px;
+  color: rgb(68, 68, 68);
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin: 0 0 48px 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 27px 0;
+  }
 }
 
 .offer__link {
