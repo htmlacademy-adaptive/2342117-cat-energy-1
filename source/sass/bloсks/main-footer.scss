@@ -7,7 +7,7 @@
   padding: 40px 20px;
 
   gap: none;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px;
