@@ -1,35 +1,87 @@
 .supplementary__container {
-  padding: 26px 0 0;
+  padding: 25px 20px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 30px 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 0 87px;
+  }
 }
 
 .supplementary__title-main {
   margin: 0 0 36px;
+  padding: 0;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   font-family: $ff-oswald;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.supplementary__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    gap: 80px;
+    grid-template-columns: 1fr auto;
+  }
 }
 
 .supplementary__list {
-  margin: 0;
+  margin: 0 0 35px;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    margin-bottom: 87px;
+
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 
 .supplementary__item {
   display: grid;
-  padding: 13px 0 19px;
+  justify-content: space-between;
+  padding: 12px 0 18px;
 
   grid-template-columns: auto auto;
-  grid-template-rows: 3;
-  row-gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+
+    border: 1px solid rgb(205, 205, 205);
+
+    grid-template-columns: 1fr 150px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+
+    column-gap: 40px;
+
+    grid-template-columns: 1fr 220px 60px 244px;
+  }
 }
 
 .supplementary__title {
-  margin: 0;
+  margin: 0 0 13px;
+  padding: 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -37,21 +89,83 @@
   font-family: $ff-oswald;
   color: #222222;
   text-transform: uppercase;
+
+  grid-row: 1/2;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin: 0;
+
+    grid-column: 1/2;
+  }
 }
 
 .supplementary__description {
+  margin: 0 0 15px;
+
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
 
   grid-row: 2/3;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+
+    font-size: 16px;
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin: 0;
+
+    grid-column: 2/3;
+  }
 }
 
 .supplementary__price {
+  margin: 0 0 15px;
+
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
 
   grid-row: 2/3;
   justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+
+    font-size: 16px;
+
+    grid-column: -2/-1;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin: 0;
+
+    grid-column: 3/4;
+  }
+}
+
+.supplementary__link {
+  grid-column: 1/-1;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+  }
 }
 
 .supplementary__proposal {
@@ -68,6 +182,12 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% auto, cover;
+
+  @media (min-width: $desktop-width) {
+    // grid-column: -2/-1;
+    // grid-row: 1/-1;
+    // не соображу как ограничить высоту блока в соответствии с таблицей
+  }
 }
 
 .supplementary__text {
@@ -77,8 +197,4 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-}
-
-.supplementary__link {
-  grid-column: 1/-1;
 }

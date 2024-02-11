@@ -1,3 +1,17 @@
+.map__container {
+  position: relative;
+
+  background: rgb(242, 242, 242);
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   padding: 60px 80px;
+  // }
+}
+
 .map {
   position: relative;
 }
@@ -7,10 +21,23 @@
 }
 
 .map__contact {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   padding: 26px 0;
 
-  grid-template-columns: 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    padding: 60px 74px;
+
+    background: rgb(255, 255, 255);
+  }
 }
 
 .map__title {

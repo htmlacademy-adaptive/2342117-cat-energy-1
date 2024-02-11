@@ -35,12 +35,12 @@
     gap: 33px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
   }
 }
 
-// .nav--close .nav__list {
-//   display: none;
-// }
+.nav--close .nav__list {
+  display: none;
+}

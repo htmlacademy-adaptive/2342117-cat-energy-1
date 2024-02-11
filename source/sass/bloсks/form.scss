@@ -3,6 +3,22 @@
   padding: 0;
 }
 
+.form__group-wrapper {
+  display: grid;
+
+  gap: none;
+  grid-template: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    gap: 72px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
+}
+
 .form__group {
   margin: 0;
 
@@ -68,6 +84,10 @@
   border-color: #ff8282;
 }
 
+.form__group--radio {
+  padding: 23px 20px;
+}
+
 .form__group--contacts {
   padding: 43px 20px 25px;
 }
@@ -110,6 +130,22 @@ textarea.form__input {
 
 .form__group--check {
   padding: 32px 20px 19px;
+}
+
+.control--check {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 123px;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 104px;
+
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .form__order {
