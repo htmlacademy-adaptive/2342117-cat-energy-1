@@ -29,8 +29,7 @@
 
   @media (min-width: $tablet-width) {
     position: static;
-
-    background-color: #000000;
+    // background-color: #000000;
 
     gap: 33px;
   }
@@ -41,6 +40,6 @@
   }
 }
 
-.nav--close .nav__list {
-  display: none;
-}
+// .nav--close .nav__list {
+//   display: none;
+// }

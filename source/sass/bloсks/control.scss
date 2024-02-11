@@ -35,6 +35,8 @@
 }
 
 .control__input--radio {
+  margin-right: 10px;
+
   border-radius: 50%;
 
   &:checked::after {
