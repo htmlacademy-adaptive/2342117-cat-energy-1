@@ -1,51 +1,42 @@
-// .example {
-//   background-image: linear-gradient(0deg, #eaeaea 42.8%, #ffffff 42%);
-// }
+.example {
+  padding: 27px 0 40px;
 
-.example__title {
-  margin: 0 0 40px;
-
-  font-size: 36px;
-  line-height: 40px;
-  font-family: $ff-oswald;
-  color: #000000;
-
-  background: rgb(234, 234, 234);
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 60px;
+    padding: 45px 0 100px;
 
-    font-size: 60px;
-    line-height: 60px;
-
-    background-color: #ffffff;
+    background-image: linear-gradient(0deg, #eaeaea 42.8%, #ffffff 42%);
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 76px;
+    padding: 22px 0 55px;
 
-    // background-image: linear-gradient(0deg, #eaeaea 42.8%, #ffffff 42%);
+    background-color: #f2f2f2;
+    background-image: linear-gradient(0deg, #f2f2f2 75%, #ffffff 75%);
   }
 }
 
 .example__container {
-  padding: 25px 20px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-items: start;
+    padding: 0;
 
-  background: rgb(234, 234, 234);
+    gap: 10px 220px;
+    grid-template-columns: 436px 1fr;
+  }
+}
+
+.example__title {
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 20px 101px;
-
-    background: rgb(255, 255, 255);
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    padding: 0 60px 75px;
-
-    background: rgb(242, 242, 242);
-
-    grid-template-columns: 436px 1fr;
+    margin-bottom: 146px;
   }
 }
 
@@ -59,6 +50,11 @@
   text-transform: lowercase;
 
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__text {
@@ -98,16 +94,20 @@
 .example__result-cover {
   display: grid;
   justify-content: space-between;
-  margin-bottom: 20px;
+  // margin-bottom: по макету пиксель перфект не бьет;
+  margin-bottom: 35px;
 
   gap: 32px;
   grid-template-columns: repeat(2, auto);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 99px;
+
+    gap: 43px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    max-width: 366px;
     margin-bottom: 55px;
   }
 }
@@ -121,14 +121,30 @@
   border-radius: 3px;
 
   grid-template-columns: repeat(2, auto);
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 77px;
+    padding: 15px 0 0;
+  }
 }
 
 .example__result-value {
+  display: block;
+  margin-bottom: 8px;
+
   font-size: 24px;
   line-height: 24px;
   font-family: $ff-oswald;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__result-price {
@@ -136,7 +152,7 @@
     justify-self: end;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -150,4 +166,32 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    min-width: 174px;
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+
+      text-align: left;
+    }
+
+    & span {
+      display: block;
+      margin-top: 10px;
+
+      text-align: right;
+
+      @media (min-width: $desktop-width) {
+        display: inline-block;
+        margin: 0;
+        margin-left: 63px;
+      }
+    }
+  }
 }

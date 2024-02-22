@@ -1,6 +1,8 @@
 .site-list {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .site-list__item {
@@ -17,27 +19,24 @@
   font-size: 20px;
   line-height: 20px;
   font-family: $ff-oswald;
-  color: inherit;
-  color: rgb(17, 17, 17);
+  text-align: center;
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
 
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
+    padding: 14px 0;
 
     font-size: 18px;
     line-height: 24px;
-    text-transform: uppercase;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    // color: rgb(255, 255, 255);
-    text-transform: uppercase;
+    color: inherit;
   }
 
   &:hover {
@@ -48,18 +47,17 @@
     opacity: 0.3;
   }
 
-  &:active::after {
-    content: "";
-    position: absolute;
-    right: 12px;
-    bottom: 8px;
-    left: 22px;
+  &--current::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
 
-    width: 168px;
-    height: 2px;
+      height: 2px;
 
-    color: #000000;
-
-    background-color: #68b738;
+      background-color: #68b738;
+    }
   }
 }

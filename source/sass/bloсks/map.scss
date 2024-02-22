@@ -1,19 +1,13 @@
-.map__container {
-  position: relative;
-
-  background: rgb(242, 242, 242);
-
-  @media (min-width: $tablet-width) {
-    padding: 60px 70px;
-  }
-}
-
 .map {
   position: relative;
-}
 
-.map--home {
-  background-color: #ffffff;
+  @media (min-width: $desktop-width) {
+    padding: 95px 0 106px;
+  }
+
+  &--home {
+    background-color: #ffffff;
+  }
 }
 
 .map__contact {
@@ -23,23 +17,26 @@
   grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 60px 39px 60px;
+
+    gap: 10px 250px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 110px;
+    position: relative;
+    z-index: 1;
 
-    padding: 60px 74px;
+    width: 565px;
+    padding: 60px 80px 59px;
 
-    background: rgb(255, 255, 255);
+    background-color: #ffffff;
+
+    gap: 10px 90px;
   }
 }
 
 .map__title {
   margin: 0;
-  padding: 0 20px 0 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -56,22 +53,60 @@
 
 .map__address {
   margin: 0;
-  padding: 0 20px 0 0;
 
   font-size: 14px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
-.map__iframe {
+.map__address span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+.map__iframe-container {
   width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+
+    inset: 0;
+  }
 }
 
 .map__img {
   display: block;
+}
+
+.map__iframe-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map__iframe {
+  height: 100%;
+}
+
+.map__iframe iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  border: none;
 }

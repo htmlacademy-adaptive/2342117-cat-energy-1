@@ -1,12 +1,68 @@
-// позиционируем от container
 .nav__toggle {
-  width: 24px;
-  height: 24px;
-  margin: 0;
-  padding: 4px 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 30px;
+  height: 30px;
+  margin: -4px -2px 0 0;
+
+  color: #000000;
+
+  background-color: transparent;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.nav__toggle-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: currentColor;
+  transform: translate(-50%, -50%);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: currentColor;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    top: 8px;
+  }
+
+  &::after {
+    top: -8px;
+  }
+}
+
+.nav--open .nav__toggle-line {
+  background-color: transparent;
+
+  &::before {
+    top: 50%;
+
+    transform: translate(-35%, -50%) rotate(-46deg);
+  }
+
+  &::after {
+    top: 50%;
+
+    transform: translate(-35%, -50%) rotate(46deg);
   }
 }
 
@@ -17,9 +73,8 @@
   left: 0;
   z-index: 1;
 
-  display: flex;
+  display: none;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -29,15 +84,20 @@
 
   @media (min-width: $tablet-width) {
     position: static;
-    // background-color: #000000;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    background-color: transparent;
 
     gap: 33px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-  }
+.nav--open .nav__list {
+  display: flex;
 }
 
 // .nav--close .nav__list {

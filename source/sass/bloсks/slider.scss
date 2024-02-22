@@ -1,3 +1,7 @@
+.example__slider {
+  position: relative;
+}
+
 .slider {
   position: relative;
 
@@ -11,6 +15,11 @@
 
   min-height: 256px;
   overflow: hidden;
+
+  // @media (min-width: $tablet-width) {
+  //   min-width: 560px;
+  //   min-height: 512px;
+  // }
 }
 
 .slider__item {
@@ -45,4 +54,60 @@
 
 .slider__item--after img {
   object-position: right;
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+
+  height: 100%;
+
+  border: 1px solid #666666;
+}
+
+.slider__button {
+  position: absolute;
+  top: 42%;
+  left: 43%;
+  z-index: 2;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+  // background-image: url("../../img/svg/telegram.svg");
+  // background-repeat: no-repeat;
+  // background-position: center;
+
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 5px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 10px solid transparent;
+    border-right: 10px solid #666666;
+    border-bottom: 10px solid transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 5px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 10px solid transparent;
+    border-right: 10px solid #666666;
+    border-bottom: 10px solid transparent;
+    transform: rotate(180deg);
+  }
 }

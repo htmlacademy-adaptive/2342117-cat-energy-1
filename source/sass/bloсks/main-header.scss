@@ -1,39 +1,83 @@
+.main-header {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding-top: 30px;
+  }
+}
+
+.main-header--home::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+}
+
+.main-header--home a {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+    }
+  }
+}
+
 .main-header__container {
   position: relative;
 
-  display: flex;
-  justify-content: space-between;
-  padding: 13px 20px 14px;
+  min-height: 65px;
+  padding: 12px 0;
+
+  @media (max-width: 767px) {
+    // padding: 25px 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 30px 20px;
+    display: grid;
+    padding: 25px 34px 0 30px;
 
-    grid-template-columns: auto, 1fr;
+    grid-template-columns: 1fr auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px 20px 60px;
-
     grid-template-columns: 1fr, 1fr;
   }
 }
 
 .main-header__logo {
-  display: flex;
-  flex-wrap: wrap;
-  max-height: 38px;
-}
+  @media (min-width: $tablet-width) {
+    min-width: 174px;
 
-.main-header__navigation {
-  margin: 0;
-  padding: 0;
-}
+    background-image: url("../../img/svg/logo-pic-tablet.svg");
+    background-repeat: no-repeat;
+    // background-position: -30px;
+  }
 
-.main-header__toggle,
-.nav__toggle {
-  width: 18px;
-  height: 18px;
-  padding: 0;
+  @media (min-width: $desktop-width) {
+    min-width: 202px;
 
-  cursor: pointer;
+    background-image: url("../../img/svg/logo-pic-desctop.svg");
+    background-repeat: no-repeat;
+    background-position: -10px;
+
+    // grid-template-columns: 1fr, 1fr;
+  }
 }
