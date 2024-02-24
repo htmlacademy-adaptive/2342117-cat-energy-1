@@ -9,14 +9,17 @@
   @media (min-width: $tablet-width) {
     display: grid;
     justify-content: space-between;
-    padding: 57px 20px 55px;
+    padding: 57px 30px 55px;
 
     grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 67px;
-    padding-bottom: 65px;
+    // padding-top: 67px;
+    // padding-bottom: 65px;
+
+    // padding: 66px 90px;
+    margin: 0;
   }
 }
 

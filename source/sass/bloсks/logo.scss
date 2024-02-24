@@ -64,6 +64,12 @@
   }
 }
 
+.logo--footer .logo__cat-text {
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
 .logo--footer {
   object-fit: cover;
 

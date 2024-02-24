@@ -16,8 +16,12 @@
 
   grid-template-columns: repeat(2, 1fr);
 
+  &--form {
+    padding-top: 10px;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 60px 39px 60px;
+    padding: 80px 39px 60px;
 
     gap: 10px 250px;
   }
