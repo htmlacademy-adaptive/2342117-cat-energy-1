@@ -11,7 +11,7 @@
 
   <body class="body no-js">
     <div class="page-wrapper">
-      <header class="main-header">
+      <header class="main-header main-header--home">
         <div class="main-header__container container">
           <a class="main-header__logo logo logo--full" aria-current="page" href="index.html">
             <img class="logo__cat-img" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
@@ -20,10 +20,10 @@
 
           <!-- НАВИГАЦИЯ -->
 
-          <nav class="main-header__navigation nav nav--close">
+          <nav class="main-header__navigation nav nav--home">
 
-            <button class="main-header__toggle nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню.</span>
+            <button class="nav__toggle" type="button" aria-label="Открыть/закрыть меню.">
+              <span class="nav__toggle-line"></span>
             </button>
             <ul class="nav__list site-list">
               <li class="site-list__item">
@@ -46,12 +46,11 @@
             <div class="promo__description">
               <h1 class="promo__title page-title">Функциональное <br>питание для котов</h1>
               <p class="promo__text">Занялся собой? Займись котом!</p>
-              <a class="promo__button button" href="form.html">Подобрать программу</a>
             </div>
             <div class="promo__img">
               <img class="promo__img-can" src="img/index-can.png" width="280" height="270" alt="Корм Cat Energy курица 500г">
             </div>
-
+            <a class="promo__button button" href="form.html">Подобрать программу</a>
           </div>
         </section>
       </header>
@@ -64,11 +63,13 @@
             <h2 class="visually-hidden">Программы</h2>
             <ul class="offer__list">
               <li class="offer__item">
+                <div class="offer__decoration offer__decoration--slim"></div>
                 <h3 class="offer__title">Похудение</h3>
                 <p class="offer__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="offer__link" href="catalog.html">Каталог Slim</a>
               </li>
               <li class="offer__item">
+                <div class="offer__decoration offer__decoration--pro"></div>
                 <h3 class="offer__title">Набор массы</h3>
                 <p class="offer__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 <a class="offer__link" href="catalog.html">Каталог Pro</a>
@@ -98,7 +99,7 @@
 
           <div class="example__container container">
             <div class="example__description">
-              <h2 class="title-page example__title">Живой пример</h2>
+              <h2 class="example__title page-title">Живой пример</h2>
               <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
               <div class="example__result">
@@ -126,11 +127,15 @@
                   <img class="slider__image slider__image--thin" src="img/cat-thin-mobile.png" alt="Стройный кот" width="280" height="256">
                 </div>
               </div>
-              <div class="slider__change">
-                <!-- будет кнопка -->
-              </div>
+              <div class="slider__toggle"></div>
+              <button class="slider__button slider__button--left slider__button--right" type="button">
+
+                <span class="visually-hidden">Подвинуть слайдер.</span>
+              </button>
+
             </div>
           </div>
+          <!-- </div> -->
         </section>
       </main>
 
@@ -141,7 +146,7 @@
           <div class="map__container container">
             <h2 class="visually-hidden">Местонахождение.</h2>
             <div class="map__contact">
-              <h3 class="map__title">Приглашаем <br>к сотрудничеству <br>дилеров!</h3>
+              <h3 class="map__title">Приглашаем&nbsp; к сотрудничеству <br>дилеров!</h3>
               <p class="map__address">ул. Большая <br>Конюшенная, д. 19/8 <br><span>Санкт-Петербург</span></p>
             </div>
           </div>
@@ -162,7 +167,7 @@
         <section class="main-footer__container container">
           <h2 class="visually-hidden">Социальные сети.</h2>
           <a class="main-footer__logo logo logo--footer" href="index.html" aria-current="page">
-            <img class="logo__cat-text" src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
+            <img class="logo__cat-text logo__cat-footer" src="img/svg/logo-name.svg" alt="Текст Cat energy.." width="128" height="24">
           </a>
 
           <ul class="main-footer__social social">
