@@ -33,94 +33,66 @@
 
 .offer__item {
   position: relative;
+  display: grid;
+  // margin-bottom: 20px;
+  // gap: 19px;
+  // flex-direction: column;
+  // align-items: flex-start;
 
-  min-height: 266px;
   padding: 30px 20px 18px;
 
   background-color: #f2f2f2;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    min-height: 372px;
-    padding: 85px 63px 57px 52px;
-
-    column-gap: 53px;
-
-    grid-template-columns: auto 1fr;
+    padding: 77px 63px 53px 52px;
   }
 
-  @media (min-width: $desktop-width) {
-    min-width: 570px;
-    min-height: 374px;
-    padding: 77px 61px 59px 52px;
-  }
-}
+  // @media (min-width: $desktop-width) {
 
-.offer__decoration {
-  position: absolute;
-  top: 24px;
-  left: 20px;
-
-  width: 50px;
-  height: 50px;
-
-  background-color: #68b738;
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    top: 50%;
-    left: 50%;
-
-    width: 200px;
-    height: 211px;
-
-    transform: translate(-50%, -50%);
-
-    grid-column: 2/3;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 95px;
-    left: 70px;
-
-    width: 100px;
-    height: 106px;
-
-    grid-column: 1/2;
-  }
+  // }
 
   &--slim {
     background-image: url("../../img/svg/cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: 20px 21px;
+    background-size: 50px 53px;
 
-    // @media (min-width: $tablet-width) {
-    //   top: 70%;
-    //   left: 300px;
-    // }
+    @media (min-width: $tablet-width) {
+      background-position: top 80px right 62px;
+      background-size: 200px 211px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 52px 42px;
+      background-size: 100px 106px;
+    }
   }
 
   &--pro {
     background-image: url("../../img/svg/cat-pro.svg");
-    background-position: center;
-    background-size: contain;
+    background-position: 12px 24px;
+    background-size: 67px 50px;
 
-    // @media (min-width: $tablet-width) {
-    //   top: 60%;
-    //   right: 60px;
-    // }
+    @media (min-width: $tablet-width) {
+      background-position: top 91px right 31px;
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 34px 47px;
+      background-size: 134px 100px;
+    }
   }
 }
 
 .offer__title {
-  margin: 0 0 29px 0;
+  margin: 0 0 29px 70px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   font-family: $ff-oswald;
-  text-align: center;
+  // text-align: left;
   color: #000000;
   text-transform: uppercase;
 
@@ -175,8 +147,10 @@
 }
 
 .offer__link {
-  // position: relative;
   display: block;
+  width: 100%;
+
+  // padding-top: 15px;
 
   font-size: 16px;
   line-height: 16px;
@@ -185,8 +159,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  background-image: url("../../img/icons/icon-arrow.svg");
-  background-position: right;
+  background-image: url("../../img/svg/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 104px;
+  background-size: 25px 10px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -194,23 +170,13 @@
     line-height: 30px;
 
     grid-column: 1/2;
+    max-width: 340px;
   }
 
   // &:hover {
-  //   как менять маленькую стрелку на большую?
   // }
 
   &:active {
     opacity: 0.3;
   }
-
-  // &::after {
-  //   content: "";
-  //   // position: absolute;
-
-  //   background-color: #3905054e;
-  //   background-image: url("../../img/icons/icon-arrow.svg");
-  //   // background-repeat: no-repeat;
-  //   // background-position: right;
-  // }
 }

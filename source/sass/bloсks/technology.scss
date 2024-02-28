@@ -91,7 +91,7 @@
     background-color: #68b738;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 28px;
+    background-size: 30px 32px;
 
     @media (min-width: $tablet-width) {
       top: 35px;
@@ -118,5 +118,21 @@
 
       counter-increment: num;
     }
+  }
+
+  &--beneficial::before {
+    background-image: url("../../img/svg/telegram.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/svg/powder.svg");
+  }
+
+  &--eating::before {
+    background-image: url("../../img/svg/icon-eat.svg");
+  }
+
+  &--changes::before {
+    background-image: url("../../img/svg/icon-clock.svg");
   }
 }

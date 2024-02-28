@@ -65,19 +65,9 @@
 .main-header__logo {
   @media (min-width: $tablet-width) {
     min-width: 174px;
-
-    background-image: url("../../img/svg/logo-pic-tablet.svg");
-    background-repeat: no-repeat;
-    // background-position: -30px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 202px;
-
-    background-image: url("../../img/svg/logo-pic-desctop.svg");
-    background-repeat: no-repeat;
-    background-position: -10px;
-
-    // grid-template-columns: 1fr, 1fr;
   }
 }
