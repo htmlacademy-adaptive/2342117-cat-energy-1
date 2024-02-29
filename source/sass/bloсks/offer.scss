@@ -34,10 +34,6 @@
 .offer__item {
   position: relative;
   display: grid;
-  // margin-bottom: 20px;
-  // gap: 19px;
-  // flex-direction: column;
-  // align-items: flex-start;
 
   padding: 30px 20px 18px;
 
@@ -47,10 +43,6 @@
   @media (min-width: $tablet-width) {
     padding: 77px 63px 53px 52px;
   }
-
-  // @media (min-width: $desktop-width) {
-
-  // }
 
   &--slim {
     background-image: url("../../img/svg/cat-slim.svg");
@@ -171,10 +163,14 @@
 
     grid-column: 1/2;
     max-width: 340px;
+
+    background-size: 26px 10px;
+    background-position: 129px;
   }
 
-  // &:hover {
-  // }
+  &:hover {
+    color: #000000;
+  }
 
   &:active {
     opacity: 0.3;

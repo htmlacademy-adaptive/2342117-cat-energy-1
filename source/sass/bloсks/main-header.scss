@@ -45,10 +45,9 @@
   min-height: 65px;
   padding: 12px 0;
 
-  @media (max-width: 767px) {
-    // padding: 25px 0;
-    border-bottom: 1px solid #d9d9d9;
-  }
+  // @media (max-width: 767px) {
+  //   // padding: 25px 0;
+  // }
 
   @media (min-width: $tablet-width) {
     display: grid;

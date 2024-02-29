@@ -9,6 +9,24 @@
   position: relative;
 
   text-align: center;
+
+  border-bottom: solid 1px #e6e6e6;
+
+  &:nth-child(1) {
+    border-top: solid 1px #e6e6e6;
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    border-top: none;
+  }
 }
 
 .site-list__link {

@@ -144,13 +144,7 @@
 
 .form__group--lines {
   border-top: 2px solid #68b738;
-
-  // @media (min-width: $desktop-width) {
-  //   position: absolute;
-  //   top: 10px;
-  // не понимаю на что повесить  position: relative;
-
-  // }
+  width: 100%;
 }
 
 .form__title {
