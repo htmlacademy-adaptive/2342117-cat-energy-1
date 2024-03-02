@@ -1,5 +1,33 @@
+.technology {
+  padding: 20px 0 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 38px;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding: 0;
+    padding-top: 70px;
+
+    border: none;
+  }
+}
+
+.technology__container {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .technology__title {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
+
+  // @media (min-width: $tablet-width) {
+  //   font-size: 60px;
+  //   line-height: 60px;
+  // }
 }
 
 .technology__list {
@@ -11,14 +39,100 @@
 
   gap: 20px;
   grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    counter-reset: num;
+
+    gap: 37px 60px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 78px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .technology__item {
   position: relative;
 
   min-height: 60px;
-  padding: 0 0 0 80px;
+  padding: 4px 0 2px 80px;
 
   font-size: 14px;
   line-height: 18px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+
+    min-height: 280px;
+    padding: 145px 75px 45px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+
+    gap: 94px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 32px;
+
+    @media (min-width: $tablet-width) {
+      top: 35px;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(num);
+      position: absolute;
+      top: 20px;
+      left: 116px;
+      z-index: -1;
+
+      margin: 0;
+
+      font-size: 280px;
+      line-height: 230px;
+      font-family: $ff-oswald;
+      color: #f2f2f2;
+
+      counter-increment: num;
+    }
+  }
+
+  &--beneficial::before {
+    background-image: url("../../img/svg/icon-leaf.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/svg/powder.svg");
+  }
+
+  &--eating::before {
+    background-image: url("../../img/svg/icon-eat.svg");
+  }
+
+  &--changes::before {
+    background-image: url("../../img/svg/icon-clock.svg");
+  }
 }

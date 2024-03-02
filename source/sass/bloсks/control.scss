@@ -35,6 +35,8 @@
 }
 
 .control__input--radio {
+  margin-right: 15px;
+
   border-radius: 50%;
 
   &:checked::after {
@@ -49,13 +51,49 @@
     background-color: #68b738;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.control--check {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 60px;
+    row-gap: 32px;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 90px;
+
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 // задать путь
-.control__input--check:checked {
-  background-image: url("../../img/svg/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 26px 26px;
+.control__input--check {
+  width: 40px;
+  height: 40px;
+  &:checked {
+    background-image: url("../../img/svg/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 }

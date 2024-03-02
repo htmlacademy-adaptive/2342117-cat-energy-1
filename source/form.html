@@ -19,9 +19,9 @@
 
           <!-- НАВИГАЦИЯ -->
 
-          <nav class="main-header__navigation nav nav--close">
-            <button class="main-header__toggle nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню.</span>
+          <nav class="main-header__navigation nav nav--home">
+            <button class="nav__toggle" type="button" aria-label="Открыть/закрыть меню.">
+              <span class="nav__toggle-line"></span>
             </button>
             <ul class="nav__list site-list">
               <li class="site-list__item">
@@ -99,8 +99,11 @@
                 <!-- контактные данные -->
 
                 <fieldset class="form__group form__group--contacts form__group--lines">
-                  <legend class="form__title">Контактные данные <br>(владельца кота)</legend>
-                  <ul class="form__list">
+                  <legend class="form__title">Контактные данные
+                    <!-- <br> -->
+                    (владельца кота)
+                  </legend>
+                  <ul class="form__list form__list--contacts">
                     <li class="form__item">
                       <label class="form__label" for="email">e-mail:*</label>
                       <span class="form__input-container form__input-container--mail">
@@ -169,9 +172,9 @@
         <section class="main-footer__map-container map">
           <div class="map__container container">
             <h2 class="visually-hidden">Местонахождение.</h2>
-            <div class="map__contact map__contact">
-              <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
-              <p class="map__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+            <div class="map__contact map__contact--form">
+              <h3 class="map__title">Приглашаем <br>к сотрудничеству <br>дилеров!</h3>
+              <p class="map__address">ул. Большая Конюшенная, д. 19/8 <br><span>Санкт-Петербург</span></p>
             </div>
           </div>
 

@@ -1,7 +1,22 @@
+.application {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+}
+
 .application__container {
   width: 100%;
   max-width: 1260px;
-  padding: 27px 20px 39px;
+  padding: 27px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 74px 45px 69px;
+  }
 }
 
 .application__title {
@@ -11,6 +26,12 @@
   font-size: 36px;
   line-height: 36px;
   font-family: $ff-oswald;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
 }
 
 .application__text {
@@ -20,4 +41,9 @@
   line-height: 18px;
   font-family: $ff-oswald;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

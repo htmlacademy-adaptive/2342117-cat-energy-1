@@ -4,16 +4,29 @@
 
   color: #111111;
 
+  cursor: pointer;
+
   --color-logo-text: #111111;
   fill: currentColor;
 
   &--full {
     display: grid;
     align-items: center;
+    margin-left: 20px;
 
     column-gap: 56px;
 
     grid-template-columns: auto 1fr;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+
+      color: #444444;
+      column-gap: 13px;
+
+      // background-image: url("../../img/svg/logo-pic-tablet.svg");
+      // background-repeat: no-repeat;
+    }
   }
 }
 
@@ -21,10 +34,75 @@
   display: block;
   width: 33px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
 }
 
 .logo__cat-text {
   display: block;
   width: 101px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 101px;
+    height: 18px;
+    margin-left: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo--footer .logo__cat-text {
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.logo--footer {
+  object-fit: cover;
+
+  &:hover {
+    color: #3e3e3e;
+
+    --color-logo-text: #3e3e3e;
+  }
+
+  &:focus {
+    color: #3e3e3e;
+
+    --color-logo-text: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+
+    --color-logo-text: #6b6b6b;
+  }
+}
+
+.logo--footer img {
+  width: 128px;
+  height: 24px;
+
+  object-fit: contain;
+}
+
+.logo__cat-footer {
+  @media (min-width: $tablet-width) {
+    width: 128px;
+    height: 24px;
+    margin: 0;
+  }
 }

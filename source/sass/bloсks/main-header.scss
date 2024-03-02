@@ -1,7 +1,72 @@
-// мин ширина есть на body, паддинг горизонтальный есть на container
+.main-header {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding-top: 30px;
+  }
+}
+
+.main-header--home::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+}
+
+.main-header--home a {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+    }
+  }
+}
+
 .main-header__container {
   position: relative;
 
-  display: flex;
-  justify-content: space-between;
+  min-height: 65px;
+  padding: 12px 0;
+
+  // @media (max-width: 767px) {
+  //   // padding: 25px 0;
+  // }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 25px 34px 0 30px;
+
+    grid-template-columns: 1fr auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr, 1fr;
+  }
+}
+
+.main-header__logo {
+  @media (min-width: $tablet-width) {
+    min-width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 202px;
+  }
 }

@@ -14,6 +14,11 @@
   background-color: $button-color;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 54px;
+    padding: 14px 26px;
+  }
 }
 
 .button:hover {
@@ -44,6 +49,15 @@
   }
 
   &:active {
-    background-color: #969090;
+    color: rgba(68, 68, 68, 0.3);
+
+    background-color: #ebebeb;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #e5e5e5;
+
+    pointer-events: none;
   }
 }

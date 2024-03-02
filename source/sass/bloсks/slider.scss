@@ -1,9 +1,18 @@
+.example__slider {
+  position: relative;
+}
+
 .slider {
   position: relative;
 
   width: 100%;
   max-width: 280px;
   margin: 0 auto;
+
+  // @media (min-width: $tablet-width) {
+  //   margin: 0;
+  //   width: 100%;
+  // }
 }
 
 .slider__container {
@@ -11,6 +20,12 @@
 
   min-height: 256px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    min-width: 560px;
+    min-height: 512px;
+    // width: 100%;
+  }
 }
 
 .slider__item {
@@ -45,4 +60,36 @@
 
 .slider__item--after img {
   object-position: right;
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    height: 110px;
+    border: 2px solid #666666;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    height: 110px;
+    border: 2px solid #666666;
+  }
 }

@@ -1,10 +1,7 @@
-// Данный элемент отвечает только за сетку всего контента, что бы шапка была всегда вверху, а футер всегда прибит к низу страницы и не важно сколко контента в main
 .page-wrapper {
   position: relative;
 
   display: flex;
   flex-direction: column;
   min-height: 100%;
-
-  background-color: #ffffff;
 }
