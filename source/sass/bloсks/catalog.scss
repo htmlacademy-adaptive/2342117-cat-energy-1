@@ -82,10 +82,6 @@
   @media (min-width: $tablet-width) {
     height: 172px;
   }
-
-  @media (min-width: $desktop-width) {
-    height: 172px;
-  }
 }
 
 .catalog__image {
@@ -120,15 +116,6 @@
     line-height: 24px;
   }
 }
-
-// .catalog__description {
-//   // grid-column: 2/3;
-
-// }
-
-// .catalog__link {
-//   grid-column: 1/3;
-// }
 
 .catalog__table-item {
   display: flex;
