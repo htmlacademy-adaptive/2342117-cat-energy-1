@@ -17,9 +17,9 @@
   grid-template-columns: auto 1fr;
 }
 
-.control__label {
-  padding-left: 15px;
-}
+// .control__label {
+//   padding-left: 15px;
+// }
 
 .control__input {
   position: relative;
@@ -82,10 +82,10 @@
   }
 }
 
-// задать путь
 .control__input--check {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+
   &:checked {
     background-image: url("../../img/svg/icon-tick.svg");
     background-repeat: no-repeat;
@@ -93,7 +93,14 @@
     background-size: 26px 26px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
     margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
   }
 }

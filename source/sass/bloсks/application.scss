@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .application__container {
@@ -15,7 +19,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 74px 45px 69px;
+    padding: 74px 0 69px;
   }
 }
 
