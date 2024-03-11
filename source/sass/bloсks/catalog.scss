@@ -78,9 +78,17 @@
 
 .catalog__link-image {
   display: block;
-  height: 86px;
+  width: 140px;
+  height: 107px;
+
   @media (min-width: $tablet-width) {
-    height: 172px;
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    height: 210px;
   }
 }
 
