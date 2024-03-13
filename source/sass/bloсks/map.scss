@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 80px 39px 60px;
+    padding: 60px 39px 60px;
 
     gap: 10px 250px;
   }
@@ -95,6 +95,7 @@
 
 .map__img {
   display: block;
+  // background-size: 320px 362px;
 }
 
 .map__iframe-container img {

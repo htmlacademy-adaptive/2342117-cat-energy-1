@@ -151,7 +151,11 @@
           <div class="map__iframe-container">
             <noscript>
               <a class="map__img" href="https://maps.app.goo.gl/wqFtRHes4bMVLsNz7">
-                <img src="img/location-mobile.jpg" alt="Карта" width="320" height="362">
+                <picture>
+                  <source media="(min-width: 1260px)" srcset="img/location-desktop.jpg 1x, img/location-desktop.jpg 2x" width="1440" height="400">
+                  <source media="(min-width: 768px)" srcset="img/location-tablet.jpg 1x, img/location-tablet.jpg 2x" width="768" height="400">
+                  <img src="img/location-mobile.jpg" srcset="img/location-mobile@2x.jpg" alt="Карта" width="320" height="362">
+                </picture>
               </a>
             </noscript>
             <div class="map__iframe">
