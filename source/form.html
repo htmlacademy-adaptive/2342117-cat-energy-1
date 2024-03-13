@@ -13,7 +13,11 @@
       <header class="main-header">
         <div class="main-header__container container">
           <a class="main-header__logo logo logo--full" href="index.html">
-            <img class="logo__cat-img" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
+            <picture>
+              <source media="(min-width: 1260px)" srcset="img/svg/logo-pic-desktop.svg" width="70" height="60">
+              <source media="(min-width: 768px)" srcset="img/svg/logo-pic-tablet.svg" width="60" height="50">
+              <img class="logo__cat-img" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
+            </picture>
             <img class="logo__cat-text" src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
           </a>
 
