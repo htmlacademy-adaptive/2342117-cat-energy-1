@@ -14,7 +14,11 @@
       <header class="main-header">
         <div class="main-header__container container">
           <a class="main-header__logo logo logo--full" href="index.html">
-            <img class="logo__cat-img" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
+            <picture>
+              <source media="(min-width: 1260px)" srcset="img/svg/logo-pic-desktop.svg" width="70" height="60">
+              <source media="(min-width: 768px)" srcset="img/svg/logo-pic-tablet.svg" width="60" height="50">
+              <img class="logo__cat-img" src="img/svg/logo-pic-mobile.svg" alt="Логотип." width="33" height="38">
+            </picture>
             <img class="logo__cat-text" src="img/svg/logo-name.svg" alt="Текст Cat energy." width="101" height="18">
           </a>
 
@@ -182,7 +186,11 @@
           <div class="map__iframe-container">
             <noscript>
               <a class="map__img" href="https://maps.app.goo.gl/wqFtRHes4bMVLsNz7">
-                <img src="img/location-mobile.jpg" alt="Карта" width="320" height="362">
+                <picture>
+                  <source media="(min-width: 1260px)" srcset="img/location-desktop.jpg 1x, img/location-desktop.jpg 2x" width="1440" height="400">
+                  <source media="(min-width: 768px)" srcset="img/location-tablet.jpg 1x, img/location-tablet.jpg 2x" width="768" height="400">
+                  <img src="img/location-mobile.jpg" srcset="img/location-mobile@2x.jpg" alt="Карта" width="320" height="362">
+                </picture>
               </a>
             </noscript>
             <div class="map__iframe">
