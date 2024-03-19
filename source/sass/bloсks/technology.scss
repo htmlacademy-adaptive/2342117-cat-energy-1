@@ -1,5 +1,5 @@
 .technology {
-  padding: 20px 0 49px;
+  padding: 22px 0 49px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 38px;
@@ -8,9 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 0;
-    padding-top: 70px;
-
+    padding: 72px 109px 64px;
     border: none;
   }
 }
@@ -23,11 +21,6 @@
 
 .technology__title {
   margin-bottom: 37px;
-
-  // @media (min-width: $tablet-width) {
-  //   font-size: 60px;
-  //   line-height: 60px;
-  // }
 }
 
 .technology__list {

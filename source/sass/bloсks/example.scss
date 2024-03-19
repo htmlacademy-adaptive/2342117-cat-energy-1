@@ -4,13 +4,13 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0 100px;
+    padding: 47px 0 100px;
 
     background-image: linear-gradient(0deg, #eaeaea 42.8%, #ffffff 42%);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 22px 0 55px;
+    padding: 0 110px 75px;
 
     background-color: #f2f2f2;
     background-image: linear-gradient(0deg, #f2f2f2 75%, #ffffff 75%);

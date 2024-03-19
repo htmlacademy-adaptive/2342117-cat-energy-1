@@ -3,13 +3,6 @@
     display: grid;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   align-items: start;
-  //   padding-bottom: 54px;
-
-  //   grid-template-columns: auto 1fr;
-  // }
-
   @media (min-width: $desktop-width) {
     align-items: start;
     padding-bottom: 160px;
@@ -20,7 +13,7 @@
 
 // div
 .promo__description {
-  padding: 26px 0 164px;
+  padding: 25px 0 164px;
 
   text-align: center;
   color: #ffffff;
@@ -40,7 +33,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 65px 90px 20px;
+    padding: 63px 90px 20px;
 
     text-align: left;
     color: #000000;
@@ -50,11 +43,7 @@
 
   @media (min-width: $desktop-width) {
     width: 545px;
-    padding: 110px 20px 30px 70px;
-
-    // background: initial;
-    // background: unset;
-    // :(
+    padding: 110px 20px 27px 70px;
   }
 }
 
@@ -100,7 +89,7 @@
 
     width: 244px;
     margin-left: 90px;
-    padding: 17px 10px;
+    padding: 15px 10px;
 
     font-size: 20px;
     line-height: 26px;
@@ -113,7 +102,7 @@
 
 .promo__img {
   width: 280px;
-  height: 270px;
+  height: 272px;
   margin: -135px auto 2px;
 
   @media (min-width: $tablet-width) {
@@ -121,7 +110,7 @@
     width: 100%;
     max-width: 709px;
     height: 609px;
-    margin: -90px auto 0;
+    margin: -85px auto 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,13 +133,8 @@
 
   object-fit: contain;
 
-  // @media (min-width: $tablet-width) {
-  //   background-position: 90px;
-  //   // margin-left: 20px;
-  //   // margin: -90px auto 0;
-  // }
-
   @media (min-width: $desktop-width) {
-    margin-top: 25px;
+    margin-top: 27px;
+    margin-left: -10px;
   }
 }

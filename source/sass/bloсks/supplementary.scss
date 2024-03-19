@@ -1,8 +1,8 @@
-.supplementary__container {
-  padding: 26px 20px 35px;
+.supplementary {
+  padding: 26px 0 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 30px 75px;
+    padding: 70px 0 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,8 +11,7 @@
 }
 
 .supplementary__title-main {
-  margin: 0 0 36px;
-  padding: 0;
+  margin-bottom: 36px;
 
   font-weight: 400;
   font-size: 24px;
@@ -21,7 +20,7 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 80px;
+    margin-bottom: 80px;
 
     font-size: 36px;
     line-height: 36px;
@@ -38,8 +37,7 @@
 }
 
 .supplementary__list {
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0 0 35px;
   padding: 0;
 
   list-style: none;

@@ -1,6 +1,20 @@
-.application {
+.application__header {
+  padding: 25px 0 17px;
+
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 38px 0 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 0 44px;
+  }
+}
+
+.application__container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -8,32 +22,10 @@
   }
 }
 
-.application__container {
-  width: 100%;
-  max-width: 1260px;
-  padding: 27px 20px 18px;
-
-  @media (min-width: $tablet-width) {
-    padding: 64px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 74px 0 69px;
-  }
-}
-
 .application__title {
   margin: 0 0 37px;
-  padding: 0;
-
-  font-size: 36px;
-  line-height: 36px;
-  font-family: $ff-oswald;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
     margin-bottom: 54px;
   }
 }

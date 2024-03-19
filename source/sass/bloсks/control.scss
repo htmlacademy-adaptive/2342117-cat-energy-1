@@ -17,9 +17,9 @@
   grid-template-columns: auto 1fr;
 }
 
-// .control__label {
-//   padding-left: 15px;
-// }
+.control__label {
+  padding-left: 15px;
+}
 
 .control__input {
   position: relative;
@@ -32,11 +32,14 @@
   border: 1px solid #cdcdcd;
 
   appearance: none;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__input--radio {
-  margin-right: 15px;
-
   border-radius: 50%;
 
   &:checked::after {
@@ -58,19 +61,20 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    margin-right: 20px;
-    width: 40px;
-    height: 40px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   margin-right: 20px;
+  //   width: 40px;
+  //   height: 40px;
+  // }
 }
 
 .control--check {
   display: grid;
 
   @media (min-width: $tablet-width) {
-    column-gap: 60px;
-    row-gap: 32px;
+    // column-gap: 60px;
+    // row-gap: 32px;
+    gap: 60px 32px;
 
     grid-template-columns: 1fr 1fr;
   }
@@ -99,8 +103,8 @@
     margin-right: 20px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 40px;
-    height: 40px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   width: 40px;
+  //   height: 40px;
+  // }
 }
