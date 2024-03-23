@@ -2,13 +2,9 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
+    padding-bottom: 0;
 
     border-top: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 76px;
   }
 }
 
@@ -24,7 +20,7 @@
   padding: 27px 0 41px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 84px;
+    padding: 63px 0 84px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +37,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -56,7 +57,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    gap: 60px;
+    gap: 140px 60px;
 
     grid-template-columns: repeat(2, 1fr);
   }
@@ -71,12 +72,15 @@
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    padding: 111px;
     border: none;
   }
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -88,13 +92,15 @@
   display: grid;
 
   grid-template-columns: 140px 1fr;
-  padding: 20px 20px;
+  padding: 20px 20px 25px;
+  min-height: 208px;
+  // row-gap: 12px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 40px 37px 40px;
+    padding: 60px 37px 40px;
 
     background-color: #f2f2f2;
   }
@@ -112,14 +118,13 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 210px;
-    margin: -111px auto 0;
+    margin: -130px auto 21px;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
     height: 210px;
-
-    margin-top: -81px;
+    margin: -112px auto 13px;
   }
 }
 
@@ -151,18 +156,32 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-  }
+    max-width: 130px;
+    margin-left: 60px;
 
-  & br {
-    @media (min-width: $tablet-width) {
+    & br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+  }
+}
+
+.catalog__description {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
   }
 }
 
 .catalog__table {
   margin: 0;
   padding: 15px 0 8px;
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 0 12px;
+  }
 }
 
 .catalog__table-item {
@@ -178,6 +197,10 @@
     padding: 7px 0 4px;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 0 5px;
+  }
 }
 
 .catalog__table-value {
@@ -187,16 +210,23 @@
 .catalog__item--more .catalog__item-cover {
   grid-template-columns: 1fr;
   align-content: start;
-  padding-top: 80px;
+  padding-top: 77px;
+
+  background-image: url("../../img/svg/plus.svg");
+  background-repeat: no-repeat;
+  background-position: top 23px center;
+  background-size: 30px 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 160px;
 
-    background-color: none;
-    background-image: url("../../img/svg/icon-phone.svg");
+    background-color: #ffffff;
+    background-image: url("../../img/svg/plus.svg");
     background-repeat: no-repeat;
-    background-position: top 100px center;
-    border: 2px solid red;
+    background-position: top 50px center;
+    background-size: 60px 60px;
+
+    border: 2px solid #f2f2f2;
   }
 
   br {
@@ -204,21 +234,32 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 147px;
+  }
 }
 
 .catalog__item--more .catalog__card-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   text-align: center;
   color: #111111;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
+    margin-left: 53px;
+    max-width: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 11px;
+    margin-bottom: 24px;
   }
 }
 
 .catalog__item--more .catalog__text {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
 
   text-align: center;
   font-size: 12px;
@@ -239,14 +280,7 @@
 
   grid-column: 1/-1;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 250px;
-  //   height: 40px;
-  //   padding: 10px 20px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   width: 169px;
-  //   padding: 10px 20px;
-  // }
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+  }
 }

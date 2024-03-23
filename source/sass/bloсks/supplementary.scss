@@ -1,18 +1,19 @@
 .supplementary {
-  padding: 26px 0 35px;
+  padding: 0 0 35px;
 
   @media (min-width: $tablet-width) {
     padding: 70px 0 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 76px 0 87px;
+    padding: 76px 0 0;
   }
 }
 
 .supplementary__title-main {
-  margin-bottom: 36px;
-
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -21,9 +22,56 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    margin-left: 40px;
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 78px;
+  }
+
+  &--lines::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      // left: 0;
+      right: 707px;
+
+      height: 2px;
+      width: 100vw;
+
+      background-color: #68b738;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -120px;
+      width: 80px;
+      bottom: 12px;
+    }
+  }
+
+  &--lines::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 245px;
+
+    height: 2px;
+    width: 100vw;
+
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      left: 375px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 12px;
+    }
   }
 }
 
@@ -57,7 +105,7 @@
 .supplementary__item {
   display: grid;
   justify-content: space-between;
-  padding: 12px 0 18px;
+  padding: 12px 0 19px;
   grid-template-columns: auto auto;
   gap: 11px 20px;
   align-items: center;
@@ -71,6 +119,7 @@
     border-top: 1px solid #cdcdcd;
 
     grid-template-columns: 1fr 150px 70px;
+    gap: 24px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -114,7 +163,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    justify-self: start;
+    margin-left: 35px;
   }
 }
 
@@ -140,10 +190,14 @@
     grid-column: 1 / -1;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
     height: 40px;
-    padding: 10px 20px;
+    // padding: 10px 20px;
   }
 }
 
