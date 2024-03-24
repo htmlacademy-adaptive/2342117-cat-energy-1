@@ -21,9 +21,18 @@
 
   fill: currentColor;
 
+  // перекрашу свг в след разделе
   &:hover,
   &:focus {
     color: #68b738;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
   }
 
   &:active {

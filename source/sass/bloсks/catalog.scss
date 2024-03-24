@@ -126,6 +126,14 @@
     height: 210px;
     margin: -112px auto 13px;
   }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
+  }
 }
 
 .catalog__image {
@@ -140,6 +148,14 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
   }
 }
 
@@ -282,5 +298,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 20px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
   }
 }

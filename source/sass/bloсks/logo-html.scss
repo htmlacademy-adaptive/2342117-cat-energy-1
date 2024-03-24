@@ -26,6 +26,14 @@
     fill: #68b738;
   }
 
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
+  }
+
   &:active {
     opacity: 0.3;
   }

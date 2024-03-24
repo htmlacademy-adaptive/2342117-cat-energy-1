@@ -73,7 +73,7 @@
 
                       <li class="form__item">
                         <label class="form__label" for="age">Возраст&nbsp;(лет):</label>
-                        <input class="form__input" type="text" id="age" placeholder="7" name="age">
+                        <input class="form__input form__input--error " type="text" id="age" placeholder="7" name="age">
                       </li>
                     </ul>
                   </fieldset>
@@ -111,7 +111,7 @@
                     <li class="form__item">
                       <label class="form__label" for="email">e-mail:*</label>
                       <span class="form__input-container form__input-container--mail">
-                        <input class="form__input" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
+                        <input class="form__input" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required disabled>
                       </span>
                     </li>
                     <li class="form__item">
@@ -161,7 +161,7 @@
                 </fieldset>
 
                 <div class="form__order">
-                  <button class="form__button button" type="submit">отправить заявку</button>
+                  <button class="form__button button button--disabled" type="submit">отправить заявку</button>
                   <p class="form__note">* — Обязательные поля</p>
                 </div>
               </div>

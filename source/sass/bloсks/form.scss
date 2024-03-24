@@ -27,7 +27,7 @@
 }
 
 .form__group--data {
-  padding: 23px 0;
+  padding: 22px 20px 9px;
 
   @media (min-width: $tablet-width) {
     padding: 21px 70px 20px;
@@ -112,14 +112,24 @@
     outline: none;
     box-shadow: 0 0 0 2px #444444;
   }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
+  }
 }
 
-.form__input--error {
-  border-color: #ff8282;
-}
-
+// .form__input--error:disabled {
+//   border-color: #ff8282;
+// }
+// .form__input:invalid {
+//   border: 2px solid #ff8282;
+// }
 .form__group--radio {
-  padding: 23px 20px 19px;
+  padding: 23px 20px 45px;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
@@ -136,7 +146,7 @@
 }
 
 .form__group--contacts {
-  padding: 43px 20px 25px;
+  padding: 33px 20px 25px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 71px 70px 70px;
@@ -147,14 +157,24 @@
   }
 }
 
-.form__group--lines {
-  border-top: 2px solid #68b738;
+.form__group--contacts .form__title {
+  z-index: 1;
+  background-color: #ffffff;
+  // top: 25px;
+  // margin-left: 20px;
+  padding: 0;
+  padding-right: 25px;
 }
+// .form__group--lines {
+//   border-top: 2px solid #68b738;
+// }
 
 .form__title {
   position: relative;
+  // margin: 0 -20px;
+  margin: 0;
 
-  margin-left: -20px;
+  // margin-left: -20px;
   padding: 0 20px;
 
   font-size: 24px;
@@ -191,6 +211,7 @@
 
 .form__input-container {
   position: relative;
+  width: 100%;
 
   &::after {
     position: absolute;
@@ -230,7 +251,7 @@
 }
 
 .form__group--comments {
-  padding: 45px 0 20px;
+  padding: 37px 0 40px 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 132px;
@@ -242,7 +263,7 @@
 }
 
 .form__group--comments .form__title {
-  top: 9px;
+  // top: 5px;
 
   @media (min-width: $tablet-width) {
     top: 46px;
@@ -255,7 +276,7 @@
 
 textarea.form__input {
   height: 150px;
-  padding: 14px;
+  padding: 14px 34px;
 
   resize: none;
 

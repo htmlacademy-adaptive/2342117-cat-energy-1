@@ -25,6 +25,22 @@
       column-gap: 13px;
     }
   }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .logo__cat-img {
@@ -74,6 +90,14 @@
     color: #3e3e3e;
 
     --color-logo-text: #3e3e3e;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
   }
 
   &:active {

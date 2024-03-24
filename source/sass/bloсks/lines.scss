@@ -1,9 +1,9 @@
-.lines {
+.form__group--lines {
   position: relative;
-
-  overflow: hidden;
+  // z-index: 2;
+  // overflow: hidden;
   margin: 0 -20px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin: 0 -30px;
@@ -19,7 +19,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: 15px;
+    top: -35px;
 
     display: inline-block;
     width: 100%;
@@ -46,10 +46,15 @@
   }
 }
 
-.lines span {
-  padding: 0 20px;
+// .form__group--lines .form__group--comments {
+//   top: 50px;
+// }
 
-  @media (min-width: $tablet-width) {
-    padding: 0 40px;
-  }
-}
+// .form__group--check .form__group--lines {
+//   &::after,
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     top: -75px;
+//   }
+// }

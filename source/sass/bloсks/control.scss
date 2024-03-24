@@ -15,6 +15,15 @@
   min-height: 30px;
 
   grid-template-columns: auto 1fr;
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .control__label {
@@ -36,6 +45,14 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
   }
 }
 
