@@ -24,6 +24,7 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
+    max-height: 694px;
   }
 }
 
@@ -43,11 +44,7 @@
   position: relative;
 
   min-height: 65px;
-  padding: 12px 0;
-
-  // @media (max-width: 767px) {
-  //   // padding: 25px 0;
-  // }
+  padding: 13px 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -58,15 +55,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr, 1fr;
-  }
-}
-
-.main-header__logo {
-  @media (min-width: $tablet-width) {
-    min-width: 174px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 202px;
+    padding: 25px 20px 0;
   }
 }

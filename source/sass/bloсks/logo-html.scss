@@ -1,7 +1,7 @@
 .logo-html {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
 
   font-size: 16px;
   line-height: 20px;
@@ -24,6 +24,14 @@
   &:hover,
   &:focus {
     fill: #68b738;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
   }
 
   &:active {

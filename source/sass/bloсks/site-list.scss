@@ -65,12 +65,20 @@
     opacity: 0.3;
   }
 
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #ffffff;
+  }
+
   &--current::after {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: 4px;
       left: 0;
 
       height: 2px;

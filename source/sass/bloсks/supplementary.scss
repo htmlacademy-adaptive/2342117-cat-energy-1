@@ -1,19 +1,19 @@
-.supplementary__container {
-  padding: 25px 20px 35px;
+.supplementary {
+  padding: 0 0 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 30px 75px;
+    padding: 70px 0 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 76px 0 87px;
+    padding: 76px 0 0;
   }
 }
 
 .supplementary__title-main {
-  margin: 0 0 36px;
-  padding: 0;
-
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -21,10 +21,57 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 78px;
+  }
+
+  &--lines::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      // left: 0;
+      right: 707px;
+
+      height: 2px;
+      width: 100vw;
+
+      background-color: #68b738;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -120px;
+      width: 80px;
+      bottom: 12px;
+    }
+  }
+
+  &--lines::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 245px;
+
+    height: 2px;
+    width: 100vw;
+
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      left: 375px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 12px;
+    }
   }
 }
 
@@ -58,16 +105,21 @@
 .supplementary__item {
   display: grid;
   justify-content: space-between;
-  padding: 12px 0 18px;
-
+  padding: 12px 0 19px;
   grid-template-columns: auto auto;
-
+  gap: 11px 20px;
+  align-items: center;
+  border-top: 1px solid #cdcdcd;
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px;
 
-    border: 1px solid rgb(205, 205, 205);
+    border-top: 1px solid #cdcdcd;
 
     grid-template-columns: 1fr 150px 70px;
+    gap: 24px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,8 +132,7 @@
 }
 
 .supplementary__title {
-  margin: 0 0 13px;
-  padding: 0;
+  margin: 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -90,103 +141,109 @@
   color: #222222;
   text-transform: uppercase;
 
-  grid-row: 1/2;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
-
-    font-size: 20px;
-    line-height: 20px;
-
-    grid-column: 1/2;
+  @media (max-width: 767px) {
+    grid-column: 1 / -1;
   }
 
-  @media (min-width: $desktop-width) {
-    align-self: center;
-    margin: 0;
-
-    grid-column: 1/2;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .supplementary__description {
-  margin: 0 0 15px;
+  margin: 0;
 
   font-size: 14px;
   line-height: 20px;
 
-  grid-row: 2/3;
-
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
-
     font-size: 16px;
-
-    grid-column: 2/3;
-    grid-row: 1/2;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    align-self: center;
-    margin: 0;
-
-    grid-column: 2/3;
+    justify-self: start;
+    margin-left: 35px;
   }
 }
 
 .supplementary__price {
-  margin: 0 0 15px;
+  margin: 0;
 
   font-size: 14px;
   line-height: 20px;
 
-  grid-row: 2/3;
   justify-self: end;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
-
     font-size: 16px;
-
-    grid-column: -2/-1;
-    grid-row: 1/2;
   }
 
   @media (min-width: $desktop-width) {
-    align-self: center;
     margin: 0;
-
-    grid-column: 3/4;
   }
 }
 
 .supplementary__link {
-  grid-column: 1/-1;
+  @media (max-width: 1259px) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+  }
 
   @media (min-width: $desktop-width) {
-    grid-column: 4/5;
+    width: 244px;
+    height: 40px;
+    // padding: 10px 20px;
   }
 }
 
 .supplementary__proposal {
-  min-width: 245px;
-  min-height: 288px;
   padding: 185px 42px 43px;
 
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)
-    ),
-    url("../../img/cat-in-box.jpg"), url("../../img/icons/icon-eat.svg");
+  background-image: url("../../img/svg/icon-box.svg"),
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../img/cat-in-box@2x.jpg") 2x,
+      url("../../img/cat-in-box.jpg") 1x
+    );
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% auto, cover;
+  background-position: top 59px center, top, top;
+  background-size: 78px 80px, auto, cover;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 200px;
+    padding: 56px 20px 52px 60px;
+
+    text-align: left;
+    background-image: url("../../img/svg/icon-box.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../img/cat-in-box-tablet@2x.jpg") 2x,
+        url("../../img/cat-in-box-tablet.jpg") 1x
+      );
+    background-position: center left 80px, top, center;
+    background-size: 80px 82px, auto, cover;
+  }
 
   @media (min-width: $desktop-width) {
-    // grid-column: -2/-1;
-    // grid-row: 1/-1;
-    // не соображу как ограничить высоту блока в соответствии с таблицей
+    width: 245px;
+    height: 288px;
+    padding: 172px 20px 26px;
+
+    text-align: center;
+    background-image: url("../../img/svg/icon-box.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../img/cat-in-box-desktop@2x.jpg") 2x,
+        url("../../img/cat-in-box-desktop.jpg") 1x
+      );
+    background-position: top 59px center, top, center;
   }
 }
 
@@ -197,4 +254,18 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 70px;
+    right: 125px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 190px;
+    right: 43px;
+    text-align: center;
+  }
 }

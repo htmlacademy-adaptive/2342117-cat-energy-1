@@ -2,7 +2,8 @@
   position: relative;
 
   @media (min-width: $desktop-width) {
-    padding: 95px 0 106px;
+    padding: 100px 95px 0 106px;
+    min-height: 400px;
   }
 
   &--home {
@@ -12,7 +13,7 @@
 
 .map__contact {
   display: grid;
-  padding: 26px 0;
+  padding: 26px 20px;
 
   grid-template-columns: repeat(2, 1fr);
 
@@ -21,7 +22,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 80px 39px 60px;
+    padding: 62px 70px 60px;
 
     gap: 10px 250px;
   }
@@ -31,12 +32,17 @@
     z-index: 1;
 
     width: 565px;
-    padding: 60px 80px 59px;
+    padding: 55px 78px 59px 82px;
 
     background-color: #ffffff;
 
     gap: 10px 90px;
   }
+}
+
+.map__container {
+  padding: 0;
+  margin: 0;
 }
 
 .map__title {
@@ -95,6 +101,8 @@
 
 .map__img {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .map__iframe-container img {
@@ -106,6 +114,10 @@
 .map__iframe {
   height: 100%;
 }
+
+// .no-js .map__iframe {
+//   display: none;
+// }
 
 .map__iframe iframe {
   display: block;

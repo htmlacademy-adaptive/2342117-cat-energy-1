@@ -11,9 +11,18 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }
 
@@ -99,7 +108,3 @@
 .nav--open .nav__list {
   display: flex;
 }
-
-// .nav--close .nav__list {
-//   display: none;
-// }

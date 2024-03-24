@@ -16,7 +16,6 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    height: 54px;
     padding: 14px 26px;
   }
 }
@@ -27,6 +26,14 @@
 
 .button:focus {
   background-color: #5eaa2f;
+}
+
+.button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 3px solid #5eaa2f;
 }
 
 .button:active {
@@ -46,6 +53,14 @@
 
   &:focus {
     background-color: #ebebeb;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
   }
 
   &:active {

@@ -72,6 +72,23 @@
   border-radius: 2px;
   fill: currentColor;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #68b738;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #5eaa2f;
+  }
+
+  &:active {
+    color: #5eaa2f;
+  }
 }
 
 .slider__button-decoration {
@@ -93,4 +110,13 @@
   border-radius: 20px;
   fill: currentColor;
   cursor: pointer;
+
+  // // перекрашу свг в след разделе
+  // &:hover {
+  //   // color: #68b738;
+  // }
+
+  // &:focus {
+  //   // color: #5eaa2f;
+  // }
 }
